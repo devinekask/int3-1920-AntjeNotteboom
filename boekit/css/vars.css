@@ -1,0 +1,23 @@
+:root {
+  --beige: #F8F8F5;
+  --red: #EE090C;
+  --white: #ffffff;
+  --black: #000000;
+
+  --titleSize: 4rem;
+  --secondTitleSize: 2.5rem;
+  --appointmentSize: 1.5rem;
+  --menuSize: 1.5rem ;
+  --reminderSize: 1.6rem;
+  --subtitleSize: 1.4rem;
+  --textSize: 1.2rem ;
+
+}
+@custom-media --only-mobile-screen (width >= 320px);
+@custom-media --only-ipad-screen (width >= 425px);
+@custom-media --only-medium-screen (width >= 1100px);
+@custom-media --only-medium2-screen (width <= 1100px);
+
+
+
+
