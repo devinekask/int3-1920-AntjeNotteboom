@@ -1,0 +1,19 @@
+{
+  "name": "integration3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/devinekask/int3-1920-AntjeNotteboom.git",
+  "author": "antje notteboom <antje.notteboom@student.howest.be>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn mamp-dev && webpack-dev-server --mode development",
+    "prod": "yarn clean && yarn copydist && webpack --mode production",
+    "copydist": "rsync -a --exclude=*.css --exclude=*.js ./src/ ./dist",
+    "clean": "rm -rf ./dist"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "not dead"
+  ]
+}
