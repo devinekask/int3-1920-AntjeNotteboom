@@ -6,10 +6,8 @@
   "author": "antje notteboom <antje.notteboom@student.howest.be>",
   "license": "MIT",
   "scripts": {
-    "dev": "yarn mamp-dev && webpack-dev-server --mode development",
-    "prod": "yarn clean && yarn copydist && webpack --mode production",
-    "copydist": "rsync -a --exclude=*.css --exclude=*.js ./src/ ./dist",
-    "clean": "rm -rf ./dist"
+    "dev": "webpack-dev-server --mode development",
+    "prod": "rm -rf dist/ && webpack --mode production"
   },
   "browserslist": [
     "last 2 versions",
