@@ -1,101 +1,259 @@
-/*base*/
-html {
-    box-sizing: border-box;
-  }
-  /* stylelint-disable */
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  /* stylelint-enable */
-  body {
-    
-  }
-  a{
-    text-decoration: none;
-  } 
-  .link__black{
-      color: black;
-  }
-  .link__white{
-    color: white;
+/*Font*/
+@font-face {
+  font-family: 'swiss bold';
+  src: url('../assets/fonts/swiss-721-bold-condensed-bt-70602.woff') format('woff'),
+       url('../assets/fonts/swiss-721-bold-condensed-bt-70602.woff2') format('woff2');
 }
-  .hidden{
-    display: none;
-  }
+
+@font-face {
+  font-family: 'swiss heavy';
+  src: url('../assets/fonts/swiss-721-heavy-bt.woff') format('woff'),
+       url('../assets/fonts/swiss-721-heavy-bt.woff2') format('woff2');
+}
+/*base*/
+
+html {
+  box-sizing: border-box;
+}
+/* stylelint-disable */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* stylelint-enable */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link__black {
+  color: black;
+}
+
+.link__white {
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
 
 /*header*/
-.header{
-    background-color: #F8F8F5;
-    padding: 0rem 0rem 0.5rem 0rem;
+
+.header {
+  background-color: #f8f8f5;
+  padding-bottom: .5rem;
 }
-.header__title{
-    background-color: #EE090C;
-    color: white;
-    text-transform: uppercase;
-    font-size: 4rem;
-    display: block;
+
+.header__title {
+  font-family: 'swiss heavy', helvetica, arial, sans-serif;
+  background-color: #ee090c;
+  color: white;
+  text-transform: uppercase;
+  font-size: 4rem;
+  display: block;
+  padding: .5rem 1rem;
 }
-.header__primenu{
+
+/* .header__primenu */
+
+.header__primenu--items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'swiss bold', helvetica, arial, sans-serif;
 }
-.header__primenu--items{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+
+.header__primenu--item {
+  text-transform: uppercase;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: block;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  font-size: 1.37rem;
+  line-height: 4.37rem;
+  color: black;
 }
-.header__primenu--item{
-    text-transform: uppercase;
-    margin: 0rem 1rem 0rem 1rem;
-    font-size: 2rem;
-    display: block;
-    padding-right: 1.25rem;
-    padding-left: 1.25rem;
-    font-size: 1.375rem;
-    line-height: 4.375rem;
-    color: black;
+
+.primenu__active {
+  background-color: white;
+  color: #ee090c;
+  display: block;
 }
-.primenu__active{
-    background-color: white;
-    color: red;
-    display: block;
+
+.header__submenu {
+  background-color: white;
 }
-.header__submenu{
-    background-color: white;
+
+.header__submenu--items {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
-.header__submenu--items{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
+
+.header__submenu--item {
+  text-transform: uppercase;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-family: 'swiss bold', helvetica, arial, sans-serif;
 }
-.header__submenu--item{
-    text-transform: uppercase;
-    margin: 0rem 1rem 0rem 1rem;
-    font-size: 1rem;
-}
-.submenu__active{
-    color: red;
+
+.submenu__active {
+  color: #ee090c;
 }
 
 /*Onze Winkel*/
-.main__winkel
-.winkel__title{
-    background-color: red;
-    display: block;
-    text-align: center;
-    color: white;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    padding: 1rem;
-    margin: 2rem 45rem 2rem 45rem;
+/* .main__winkel */
+
+.winkel__title {
+  font-family: 'swiss bold', helvetica, arial, sans-serif;
+  background-color: #ee090c;
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin: 2rem 45rem 2rem 45rem;
 }
 
 /*highlight*/
-.highlight{
-    border: solid yellow;
-    padding: 1rem;
-    margin: 2rem 10rem;
+
+.highlight {
+  border: solid #ee090c;
+  padding: 1rem;
+  margin: 2rem 15rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
 }
+
+.highlight__wrapper {
+  display: flex;
+  flex-direction: column;
+  /* align-items:; */
+}
+
+.highlight__title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 5rem;
+
+}
+
+.highlight__book {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.highlight__text {
+
+}
+
+.highlight__img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*filter*/
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .filter__options
+.filter__label */
+
+.filter__option {
+  margin-right: 2rem;
+}
+
+.filter__button {
+  color: white;
+  background-color: red;
+  padding: .5rem 1rem .5rem 1rem;
+  border-radius: .4rem;
+}
+
+.filter__button:hover {
+  box-shadow: 0rem ;
+}
+
+/*Section*/
+
+.section {
+  margin: 2rem 20rem;
+  width: auto;
+}
+
+.section__title {
+  font-size: 2.1rem;
+  font-family: 'swiss bold', helvetica, arial, sans-serif;
+}
+
+.section__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+/*Boeken*/
+.books
+.book {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.book__title {
+  font-weight: bold;
+  margin-top: .5rem;
+}
+
+.book__author {
+  color: grey;
+  font-weight: lighter;
+}
+
+.book__image {}
+
+.book__image--wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.book__price {
+
+}
+
+.book__discount {
+  margin-top: .5rem;
+  background-color: yellow;
+  padding: .5rem;
+}
+
+.book__ebook {
+  margin-top: .5rem;
+}
+
+.book__cart {
+  margin-top: .5rem;
+}
+
+.book__price--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+/*Extra's*/
+/*Abonnement*/
