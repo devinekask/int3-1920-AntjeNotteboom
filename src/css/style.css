@@ -1,14 +1,16 @@
 /*Font*/
 @font-face {
   font-family: 'swiss bold';
-  src: url('../assets/fonts/swiss-721-bold-condensed-bt-70602.woff') format('woff'),
-       url('../assets/fonts/swiss-721-bold-condensed-bt-70602.woff2') format('woff2');
+  src:
+    url(/assets/fonts/swiss-721-bold-condensed-bt-70602.woff) format('woff'),
+    url(/assets/fonts/swiss-721-bold-condensed-bt-70602.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'swiss heavy';
-  src: url('../assets/fonts/swiss-721-heavy-bt.woff') format('woff'),
-       url('../assets/fonts/swiss-721-heavy-bt.woff2') format('woff2');
+  src:
+    url(/assets/fonts/swiss-721-heavy-bt.woff) format('woff'),
+    url(/assets/fonts/swiss-721-heavy-bt.woff2) format('woff2');
 }
 /*base*/
 
@@ -123,7 +125,7 @@ a {
   font-size: 1.5rem;
   text-transform: uppercase;
   padding: 1rem;
-  margin: 2rem 45rem 2rem 45rem;
+  margin: 2rem 45rem;
 }
 
 /*highlight*/
@@ -156,9 +158,7 @@ a {
   margin-bottom: 5rem;
 }
 
-.highlight__text {
-
-}
+/* .highlight__text {} */
 
 .highlight__img {
   display: flex;
@@ -183,12 +183,8 @@ a {
 .filter__button {
   color: white;
   background-color: red;
-  padding: .5rem 1rem .5rem 1rem;
+  padding: .5rem 1rem;
   border-radius: .4rem;
-}
-
-.filter__button:hover {
-  box-shadow: 0rem ;
 }
 
 /*Section*/
@@ -208,7 +204,8 @@ a {
   justify-content: space-between;
 }
 /*Boeken*/
-.books
+/* .books */
+
 .book {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -224,16 +221,14 @@ a {
   font-weight: lighter;
 }
 
-.book__image {}
+/* .book__image {} */
 
 .book__image--wrapper {
   display: flex;
   flex-direction: column-reverse;
 }
 
-.book__price {
-
-}
+/* .book__price {} */
 
 .book__discount {
   margin-top: .5rem;
