@@ -34,8 +34,6 @@
     "clean": "rm -rf ./dist",
     "mamp-dev": "./node_modules/.bin/mamp switch \"$(pwd)/src\"",
     "mamp-prod": "./node_modules/.bin/mamp switch \"$(pwd)/dist\""
-    // "dev": "webpack-dev-server --mode development",
-    // "prod": "rm -rf dist/ && webpack --mode production"
   },
   "browserslist": [
     "last 2 versions",
