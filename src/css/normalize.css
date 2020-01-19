@@ -1,27 +1,12 @@
-/*Font*/
-@font-face {
-  font-family: 'swiss bold';
-  src:
-    url(/assets/fonts/swiss-721-bold-condensed-bt-70602.woff) format('woff'),
-    url(/assets/fonts/swiss-721-bold-condensed-bt-70602.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'swiss heavy';
-  src:
-    url(/assets/fonts/swiss-721-heavy-bt.woff) format('woff'),
-    url(/assets/fonts/swiss-721-heavy-bt.woff2) format('woff2');
-}
-
 /*Onze Winkel*/
 /* .main__winkel */
 
 .winkel__title {
   font-family: 'swiss bold', helvetica, arial, sans-serif;
-  background-color: #ee090c;
+  background-color: var(--red);
   display: block;
   text-align: center;
-  color: white;
+  color: var(--white);
   font-size: 1.5rem;
   text-transform: uppercase;
   padding: 1rem;
@@ -31,7 +16,9 @@
 /*highlight*/
 
 .highlight {
-  border: solid #ee090c;
+  background-color: var(--beige);
+  border-top: dashed var(--black);
+  border-bottom: dashed var(--black);
   padding: 1rem;
   margin: 2rem 15rem;
   display: flex;
@@ -43,7 +30,6 @@
 .highlight__wrapper {
   display: flex;
   flex-direction: column;
-  /* align-items:; */
 }
 
 .highlight__title {
@@ -56,9 +42,28 @@
 .highlight__book {
   text-align: center;
   margin-bottom: 5rem;
+  font-size: 2rem;
 }
 
 /* .highlight__text {} */
+
+.highlight__link {
+  color: var(--black);
+  text-decoration: underline;
+}
+
+.higlight__link:hover {
+  color: var(--red);
+}
+
+.cart__button {
+  border: var(--red) solid .1rem;
+  border-radius: .5rem;
+  padding: .3rem;
+  display: inline-block;
+  text-align: center;
+  width: 4rem;
+}
 
 .highlight__img {
   display: flex;
@@ -81,8 +86,8 @@
 }
 
 .filter__button {
-  color: white;
-  background-color: red;
+  color: var(--white);
+  background-color: var(--red);
   padding: .5rem 1rem;
   border-radius: .4rem;
 }
@@ -107,8 +112,7 @@
 /* .books */
 
 .book {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0rem;
 }
 
 .book__title {
@@ -117,7 +121,7 @@
 }
 
 .book__author {
-  color: grey;
+  color: var(--grey);
   font-weight: lighter;
 }
 
@@ -132,7 +136,7 @@
 
 .book__discount {
   margin-top: .5rem;
-  background-color: yellow;
+  background-color: var(--yellow);
   padding: .5rem;
 }
 
@@ -149,6 +153,10 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
+}
+
+.cart__button--book {
+  margin-top: 1rem;
 }
 /*Extra's*/
 /*Abonnement*/
