@@ -1,13 +1,12 @@
-@font-face {
-  font-family: 'swiss bold';
+/* @font-face {
+  font-family: "swiss bold";
   src:
     url(/assets/fonts/swiss-721-bold-condensed-bt-70602.woff) format('woff'),
     url(/assets/fonts/swiss-721-bold-condensed-bt-70602.woff2) format('woff2');
 }
 
 @font-face {
-  font-family: 'swiss heavy';
-  src:
-    url(/assets/fonts/swiss-721-heavy-bt.woff) format('woff'),
-    url(/assets/fonts/swiss-721-heavy-bt.woff2) format('woff2');
-}
+  font-family: "swiss heavy";
+  src: url("../assets/fonts/swiss-721-heavy-bt.woff") format("woff"),
+      url("../assets/fonts/swiss-721-heavy-bt.woff2") format("woff2");
+} */
