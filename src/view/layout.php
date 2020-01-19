@@ -26,7 +26,7 @@
                 <li class="header__title"> <a class="link__white" href=""> Humo</a></li>
                 <li class=""> <a class="header__primenu--item" href=""> Tv/film</a></li>
                 <li class=""> <a class="header__primenu--item" href="">Muziek</a> </li>
-                <li class=""> <a class="header__primenu--item primenu__active" href="">Boeken</a> </li>
+                <li class=""> <a class="header__primenu--item primenu__active" href="index.php">Boeken</a> </li>
                 <li class="hidden"> <a class="link__black" href="">zoek</a></li>
             </ul>
         </nav>
@@ -45,7 +45,10 @@
       <?php echo $content;?>
     </main>
     <footer class="navigation__bottom footer">
-
+      <ul>
+        <li>contact</li>
+        <li>nieuwsletter</li>
+      </ul>
     </footer>
     <script src="http://localhost:8080/script.js"></script>
   </body>

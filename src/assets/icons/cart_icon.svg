@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.678" height="18" viewBox="0 0 22.678 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="cart_icon" transform="translate(0 0.5)">
+    <path id="Path" class="cls-1" d="M0,0H4.335L6.566,13H18.977L22,3.231H5.286"/>
+    <circle id="Oval" class="cls-1" cx="1.5" cy="1.5" r="1.5" transform="translate(7 14)"/>
+    <circle id="Oval-2" data-name="Oval" class="cls-1" cx="1.5" cy="1.5" r="1.5" transform="translate(15 14)"/>
+  </g>
+</svg>
