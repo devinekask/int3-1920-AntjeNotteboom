@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  SyntaxError: /Applications/MAMP/htdocs/test/int3-1920-AntjeNotteboom/package.json: Unexpected token / in JSON at position 1244
+  SyntaxError: /Applications/MAMP/htdocs/test/int3-1920-AntjeNotteboom/package.json: Unexpected token } in JSON at position 846
       at JSON.parse (<anonymous>)
       at /Users/antjenotteboom/.yarn/lib/cli.js:1625:59
       at Generator.next (<anonymous>)
@@ -49,17 +49,13 @@ npm manifest:
       "url-loader": "^2.1.0",
       "webpack": "^4.40.2",
       "webpack-cli": "^3.3.8",
-      "webpack-dev-server": "^3.8.0"
+      "webpack-dev-server": "^3.8.0",
     },
     "scripts": {
       "dev": "yarn mamp-dev && webpack-dev-server --mode development",
       "prod": "yarn clean && yarn copydist && webpack --mode production",
       "copydist": "rsync -a --exclude=*.css --exclude=*.js ./src/ ./dist",
-      "clean": "rm -rf ./dist",
-      "mamp-dev": "./node_modules/.bin/mamp switch \"$(pwd)/src\"",
-      "mamp-prod": "./node_modules/.bin/mamp switch \"$(pwd)/dist\""
-      // "dev": "webpack-dev-server --mode development",
-      // "prod": "rm -rf dist/ && webpack --mode production"
+      "clean": "rm -rf ./dist"
     },
     "browserslist": [
       "last 2 versions",
