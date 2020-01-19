@@ -63,6 +63,11 @@
   display: inline-block;
   text-align: center;
   width: 4rem;
+  &:hover {
+    background-color: var(--red);
+    color: white;
+    transition: ease-in-out;
+  }
 }
 
 .highlight__img {
@@ -106,13 +111,14 @@
 
 .section__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 /*Boeken*/
 /* .books */
 
 .book {
-  margin: 1rem 0rem;
+  margin: 2rem .1rem;
 }
 
 .book__title {

@@ -13,11 +13,11 @@ error_reporting(E_ALL);
 
 $routes = array(
   'home' => array(
-    'controller' => 'products',
+    'controller' => 'Products',
     'action' => 'index'
   ),
   'detail' => array(
-    'controller' => 'products',
+    'controller' => 'Products',
     'action' => 'detail'
   )
 );
