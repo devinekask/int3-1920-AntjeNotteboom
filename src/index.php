@@ -3,52 +3,23 @@ session_start();
 ini_set('display_errors', true);
 error_reporting(E_ALL);
 
-// basic .env file parsing
-if (file_exists("../.env")) {
-  $variables = parse_ini_file("../.env", true);
-  foreach ($variables as $key => $value) {
-    putenv("$key=$value");
-  }
-}
+// // basic .env file parsing
+// if (file_exists("../.env")) {
+//   $variables = parse_ini_file("../.env", true);
+//   foreach ($variables as $key => $value) {
+//     putenv("$key=$value");
+//   }
+// }
 
 $routes = array(
   'home' => array(
-    'controller' => 'Series',
+    'controller' => 'products',
     'action' => 'index'
   ),
   'detail' => array(
-    'controller' => 'Series',
+    'controller' => 'products',
     'action' => 'detail'
-  ),
-  'date' => array(
-    'controller' => 'Series',
-    'action' => 'date'
-  ),
-  'serie' => array(
-    'controller' => 'Series',
-    'action' => 'serie'
-  ),
-  'extra' => array(
-    'controller' => 'Series',
-    'action' => 'extra'
-  ),
-  'search' => array(
-    'controller' => 'Series',
-    'action' => 'search'
-  ),
-  'location' => array(
-    'controller' => 'Series',
-    'action' => 'location'
-  ),
-  'friend' => array(
-    'controller' => 'Series',
-    'action' => 'friend'
-  ),
-  'end' => array(
-    'controller' => 'Series',
-    'action' => 'end'
   )
-
 );
 
 if(empty($_GET['page'])) {

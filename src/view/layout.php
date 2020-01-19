@@ -2,10 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Binger</title>
+    <title>Book-it</title>
     <?php /* NEW */ ?>
-    <?php echo $css;?>
-    <link href="../../style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <main>
@@ -18,28 +17,36 @@
         }
       ?>
       <header class="header">
-        <a href="index.php" class="header__title"><h1>binger</h1></a>
-         <nav class="header__menu header--hidden">
-          <ul class="header__menu--items">
-           <li><a class="header__menu--item" href="index.php?page=search"><img src="../assets/img/film.png"
-              alt="film icoon">Add serie</a></li>
-           <li><a class="header__menu--item" href="index.php?page=serie"><img src="../assets/img/ticket.png"
-              alt="ticket icoon">Add date</a></li>
-          </ul>
-         </nav>
-      </header>
+        <h1 class="hidden">Humo</h1>
+        <nav class="header__primenu">
+            <ul class="header__primenu--items">
+                <li class=""> <a class="header__primenu--item" href="">Home</a></li>
+                <li class=""> <a class="header__primenu--item" href="">Actua</a> </li>
+                <li class=""> <a class="header__primenu--item" href="">Humor</a></li>
+                <li class="header__title"> <a class="link__white" href=""> Humo</a></li>
+                <li class=""> <a class="header__primenu--item" href=""> Tv/film</a></li>
+                <li class=""> <a class="header__primenu--item" href="">Muziek</a> </li>
+                <li class=""> <a class="header__primenu--item primenu__active" href="">Boeken</a> </li>
+                <li class="hidden"> <a class="link__black" href="">zoek</a></li>
+            </ul>
+        </nav>
+        <div class="header__submenu">
+            <ul class="header__submenu--items">
+                <li class="header__submenu--item">Reviews</li>
+                <li class="header__submenu--item">Fictie</li>
+                <li class="header__submenu--item">Non-fictie</li>
+                <li class="header__submenu--item">Het lezen zoals het is</li>
+                <li class="header__submenu--item">De grootste schrijvers van deze tijd</li>
+                <li class="header__submenu--item"> <a class="link__black  submenu__active" href=""> Shop</a></li>
+                <li class="header__submenu--item submenu__cart"> <a class="link__black" href="">(0)</a></li>
+            </ul>
+        </div>
+    </header>
       <?php echo $content;?>
     </main>
     <footer class="navigation__bottom footer">
-      <nav class="header__menu footer__menu--hidden">
-          <ul class="header__menu--items">
-           <li><a class="header__menu--item" href="index.php?page=search"><img src="../assets/img/film.png"
-              alt="film icoon">Add serie</a></li>
-           <li><a class="header__menu--item" href="index.php?page=serie"><img src="../assets/img/ticket.png"
-              alt="ticket icoon">Add date</a></li>
-          </ul>
-      </nav>
+
     </footer>
-    <?php echo $js; ?>
+    <script src="http://localhost:8080/script.js"></script>
   </body>
 </html>
