@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18.428" height="14.918" viewBox="0 0 18.428 14.918">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #000;
+      }
+
+      .cls-2 {
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="payment_icon" transform="translate(-756.443 -531.32)">
+    <path id="Path_24" data-name="Path 24" class="cls-1" d="M-4179.087,2173.625c-.01,1.716,0,10.491,0,10.491s.06,1.52,2.137,1.589,13.436,0,13.436,0a1.606,1.606,0,0,0,1.834-1.589c.036-1.765,0-10.491,0-10.491a1.686,1.686,0,0,0-1.834-1.805c-1.94.024-13.436,0-13.436,0S-4179.077,2171.909-4179.087,2173.625Z" transform="translate(4936.034 -1640)"/>
+    <path id="Path_29" data-name="Path 29" class="cls-2" d="M0,.7H18" transform="translate(756.5 536.104)"/>
+  </g>
+</svg>
