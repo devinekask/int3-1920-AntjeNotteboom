@@ -1,0 +1,32 @@
+/*base*/
+
+html {
+  box-sizing: border-box;
+}
+/* stylelint-disable */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* stylelint-enable */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link__black {
+  color: black;
+}
+
+.link__white {
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
