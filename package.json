@@ -28,10 +28,12 @@
     "webpack-dev-server": "^3.8.0"
   },
   "scripts": {
-    "dev": "webpack-dev-server --mode development",
+    "dev": "yarn mamp-dev && webpack-dev-server --mode development",
     "prod": "yarn clean && yarn copydist && webpack --mode production",
     "copydist": "rsync -a --exclude=*.css --exclude=*.js ./src/ ./dist",
-    "clean": "rm -rf ./dist"
+    "clean": "rm -rf ./dist",
+    "mamp-dev": "./node_modules/.bin/mamp switch \"$(pwd)/src\"",
+    "mamp-prod": "./node_modules/.bin/mamp switch \"$(pwd)/dist\""
   },
   "browserslist": [
     "last 2 versions",
