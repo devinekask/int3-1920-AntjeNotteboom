@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^6.26.6",
-    "@babel/preset-env": "^1.6.1",
-    "babel-loader": "^7.1.4",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
     "eslint": "^6.3.0",
     "eslint-config-devine": "^3.0.0",
@@ -23,13 +23,15 @@
     "style-loader": "^1.0.0",
     "stylelint-config-devine": "^2.0.2",
     "url-loader": "^2.1.0",
-    "webpack": "^4.17.1",
+    "webpack": "^4.40.2",
     "webpack-cli": "^3.3.8",
     "webpack-dev-server": "^3.8.0"
   },
   "scripts": {
     "dev": "webpack-dev-server --mode development",
-    "prod": "rm -rf dist/ && webpack --mode production"
+    "prod": "yarn clean && yarn copydist && webpack --mode production",
+    "copydist": "rsync -a --exclude=*.css --exclude=*.js ./src/ ./dist",
+    "clean": "rm -rf ./dist"
   },
   "browserslist": [
     "last 2 versions",
