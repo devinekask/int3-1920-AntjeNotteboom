@@ -19,6 +19,34 @@ $routes = array(
   'detail' => array(
     'controller' => 'Products',
     'action' => 'detail'
+  ),
+  'cart' => array(
+    'controller' => 'Products',
+    'action' => 'cart'
+  ),
+  'checkout' => array(
+    'controller' => 'Products',
+    'action' => 'checkout'
+  ),
+  'payment' => array(
+    'controller' => 'Products',
+    'action' => 'payment'
+  ),
+  'message' => array(
+    'controller' => 'Products',
+    'action' => 'message'
+  ),
+  'longreadHome' => array(
+    'controller' => 'Products',
+    'action' => 'longreadHome'
+  ),
+  'longreadError' => array(
+    'controller' => 'Products',
+    'action' => 'longreadError'
+  ),
+  'longread' => array(
+    'controller' => 'Products',
+    'action' => 'longread'
   )
 );
 

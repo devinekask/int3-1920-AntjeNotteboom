@@ -1,0 +1,58 @@
+.home__longread {
+}
+
+.home__longread--article {
+  width: 96rem;
+  margin: auto;
+  height: 1024px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.home__longread--text {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__longread--image {
+  position: absolute;
+  z-index: 0;
+}
+
+.longread__text--title {
+  font-size: 7.5rem;
+  color: var(--white);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.longread__text--text {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  z-index: 1;
+}
+
+.longread__buttons {
+  margin-top: 3rem;
+}
+
+.longread__button {
+  color: var(--black);
+  background-color: white;
+  border-radius: 1rem;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  width: 2rem;
+  margin: 2rem;
+
+
+}

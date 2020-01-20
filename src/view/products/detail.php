@@ -21,9 +21,9 @@
                     <p class="book__ebook">E-book: &euro;1,99</p>
                     <fieldset class="filter__options">
                         <legend class="filter__label">
-                            <input class="" type="radio" name="filter" id="paperback"> <label class="filter__option"
+                            <input class="" type="radio" name="book" id="paperback"> <label class="filter__option"
                                 for="paperback">Paperback &euro;12,99 </label>
-                            <input class="" type="radio" name="filter" id="e-book"><label class="filter__option"
+                            <input class="" type="radio" name="book" id="e-book"><label class="filter__option"
                                 for="e-book">E-book &euro;1,99</label>
                         </legend>
                     </fieldset>
