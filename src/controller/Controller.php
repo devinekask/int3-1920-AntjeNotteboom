@@ -14,19 +14,15 @@ class Controller {
   }
 
   public function session() {
-    if(!isset($_SESSION['cart'])) {
-      $_SESSION['cart'] = array();
-    }
+    // if(!isset($_SESSION['kar'])) {
+    //   $_SESSION['kar'] = array();
+    // }
     call_user_func(array($this, $this->route['action']));
   }
 
 
   public function render() {
-    $numItems = 0;
-    foreach ($_SESSION['cart'] as $productId => $info) {
-      $numItems += $info['quantity'];
-    }
-    $this->set('numItems', $numItems);
+
     // // set js variable according to environment (development / production)
     // $this->set('js', '<script src="http://localhost:8080/script.js"></script>'); // webpack dev server
     // // NEW : CSS

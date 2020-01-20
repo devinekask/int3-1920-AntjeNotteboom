@@ -27,14 +27,14 @@
                                 for="e-book">E-book &euro;1,99</label>
                         </legend>
                     </fieldset>
-                    <a class="cart__button cart__button--product" href=""> + In mijn winkelwagen <img
-                            src="/assets/icons/cart_icon.svg" alt="voeg to in winkelmandje"></a>
+                    <a class="cart__button cart__button--product" href="index.php?page=cart"> + In mijn winkelwagen <img
+                            src="assets/icons/cart_icon.svg" alt="voeg to in winkelmandje"></a>
 
                     <ul>
-                        <li> <img src="/assets/icons/cart_icon.svg" alt="winkelkarretje"> Eenvoudig bestellen</li>
-                        <li> <img src="/assets/icons/payment_icon.svg" alt="bankaart icoon"> Veilig betalen</li>
-                        <li> <img src="/assets/icons/truck_icon.svg" alt="truck icoon"> Gratis thuislevering vanaf &euro;20 </li>
-                        <li> <img src="/assets/icons/house_icon.svg" alt="huis icoon"> Levering in een winkel of bij je thuis</li>
+                        <li> <img src="assets/icons/cart_icon.svg" alt="winkelkarretje"> Eenvoudig bestellen</li>
+                        <li> <img src="assets/icons/payment_icon.svg" alt="bankaart icoon"> Veilig betalen</li>
+                        <li> <img src="assets/icons/truck_icon.svg" alt="truck icoon"> Gratis thuislevering vanaf &euro;20 </li>
+                        <li> <img src="assets/icons/house_icon.svg" alt="huis icoon"> Levering in een winkel of bij je thuis</li>
                     </ul>
                 </div>
             </article>

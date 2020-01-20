@@ -1,14 +1,10 @@
 <main class="main__cart">
  <a class="back" href="index.php">&#60; terug</a>
  <section class="cart">
-   <h2>Cart</h2>
-
-   <?php foreach($_SESSION['cart'] as $product){
-      $itemTotal = $item['product']['price'] * $item['quantity'];
-      $total += $itemTotal; ?>
+   <h2 class="hidden">Cart</h2>
    <article class="cart__item">
      <h3>Wool <br> <span>Hugh Howey</span></h3>
-     <img src="<?php echo $product['image'];?>" alt="">
+     <img src="" alt="">
      <div>
      <p>Paperback: &euro;12,99</p>
      <p>Korting: &euro;4;99</p>
@@ -19,9 +15,6 @@
      </div>
      <p>x</p>
    </article>
-   <?php
-          }
-          ?>
 
    <article>
      <h3>Gebruik de kortingscode</h3>
