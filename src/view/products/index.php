@@ -4,7 +4,7 @@
             <div class="highlight__wrapper">
                 <h3 class="highlight__title">Highlight van de week:</h3>
                 <p class="highlight__book"><a class="link__black" href="index.php?page=detail&id=2">Wool - Hugh Howey</a></p>
-                <p class="highlight__text">Lees de <a class="highlight__link" href="">longread</a> of koop het boek <a
+                <p class="highlight__text">Lees de <a class="highlight__link" href="index.php?page=longreadHome">longread</a> of koop het boek <a
                         class="cart__button" href=""><img src="/assets/icons/cart_icon.svg"
                             alt="voeg to in winkelmandje"></a></p>
             </div>
@@ -22,7 +22,6 @@
                         for="abonnement">Abonnement</label>
                 </legend>
             </fieldset>
-            <input type="submit" class="filter__button" href="../src/extra.html" value="Filter">
         </div>
         <section class="section books">
             <h3 class="section__title">Boeken</h3>
@@ -41,8 +40,8 @@
                         <p class="book__price"> &euro; <?php echo $product['price'];?></p>
                         <p class="book__discount">Korting: &euro; 4,99</p>
                         <p class="book__ebook">E-book: &euro; 1,99</p>
-                        <a class="cart__button cart__button--book" href=""><img src="/assets/icons/cart_icon.svg"
-                                alt="voeg to in winkelmandje"></a>
+                        <button class="btn cart__button cart__button--book" type="submit" name="action" value="add"><img src="/assets/icons/cart_icon.svg"
+                                alt="voeg to in winkelmandje"></button>
                     </div>
                 </article>
             <?php endforeach; ?>

@@ -15,8 +15,6 @@ class ProductsController extends Controller {
     $products = $this->productDAO->selectAllProducts();
     $this->set('products', $products);
     $this->set('title', 'Home');
-    // $following = $this->productDAO->selectFollowing();
-    // $this->set('following', $following);
 
     // if(!empty($_POST['action'])){
     //   if($_POST['action'] == 'insertDate'){
@@ -44,6 +42,69 @@ class ProductsController extends Controller {
     $this->set('product', $product);
     $this->set('title', "detail");
   }
+
+  public function cart(){
+      if(!empty($_POST['action'])) {
+        if ($_POST['action'] == 'add') {
+          $this->_handleAdd();
+          header('Location: index.php?page=detail&id=' . $_POST['id']);
+          exit();
+        }
+        if ($_POST['action'] == 'empty') {
+          $_SESSION['cart'] = array();
+        }
+        if ($_POST['action'] == 'update') {
+          $this->_handleUpdate();
+        }
+        header('Location: index.php?page=cart');
+        exit();
+      }
+      if (!empty($_POST['remove'])) {
+        $this->_handleRemove();
+        header('Location: index.php?page=cart');
+        exit();
+      };
+  }
+
+  private function _handleAdd() {
+    if (empty($_SESSION['cart'][$_POST['id']])) {
+      $product = $this->productDAO->selectById($_POST['id']);
+      if (empty($product)) {
+        return;
+      }
+      $_SESSION['cart'][$_POST['id']] = array(
+        'product' => $product,
+        'quantity' => 0
+      );
+    }
+    $_SESSION['cart'][$_POST['id']]['quantity']++;
+  }
+
+  private function _handleRemove() {
+    if (isset($_SESSION['cart'][$_POST['remove']])) {
+      unset($_SESSION['cart'][$_POST['remove']]);
+    }
+  }
+
+  public function checkout(){
+    $this->set('title', "checkout");
+  }
+  public function payment(){
+    $this->set('title', "payment");
+  }
+  public function message(){
+    $this->set('title', "message");
+  }
+  public function longreadHome(){
+    $this->set('title', "longreadHome");
+  }
+  public function longreadError(){
+    $this->set('title', "longreadError");
+  }
+  public function longread(){
+    $this->set('title', "longread");
+  }
+
 
   // public function end(){
   //   $this->set('title', 'End');
