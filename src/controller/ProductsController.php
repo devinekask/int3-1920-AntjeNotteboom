@@ -44,46 +44,7 @@ class ProductsController extends Controller {
   }
 
   public function cart(){
-      if(!empty($_POST['action'])) {
-        if ($_POST['action'] == 'add') {
-          $this->_handleAdd();
-          header('Location: index.php?page=detail&id=' . $_POST['id']);
-          exit();
-        }
-        if ($_POST['action'] == 'empty') {
-          $_SESSION['cart'] = array();
-        }
-        if ($_POST['action'] == 'update') {
-          $this->_handleUpdate();
-        }
-        header('Location: index.php?page=cart');
-        exit();
-      }
-      if (!empty($_POST['remove'])) {
-        $this->_handleRemove();
-        header('Location: index.php?page=cart');
-        exit();
-      };
-  }
-
-  private function _handleAdd() {
-    if (empty($_SESSION['cart'][$_POST['id']])) {
-      $product = $this->productDAO->selectById($_POST['id']);
-      if (empty($product)) {
-        return;
-      }
-      $_SESSION['cart'][$_POST['id']] = array(
-        'product' => $product,
-        'quantity' => 0
-      );
-    }
-    $_SESSION['cart'][$_POST['id']]['quantity']++;
-  }
-
-  private function _handleRemove() {
-    if (isset($_SESSION['cart'][$_POST['remove']])) {
-      unset($_SESSION['cart'][$_POST['remove']]);
-    }
+    $this->set('title', "cart");
   }
 
   public function checkout(){
@@ -165,33 +126,6 @@ class ProductsController extends Controller {
   //   $this->set('episodes',$this->serieDAO->selectEpsiodesBySeason($_GET['id']));
   // }
 
-  // public function search(){
-  //   $this->set('title','Search');
-  //   /*if (!empty($_GET['action']) && $_GET['action'] == 'filter') {
-  //     $series = $this->serieDAO->search($_GET['term']);
-  //     $this->set('term',$_GET['term']);
-  //   }else{
-  //     $series = $this->serieDAO->selectAll();
-  //     $this->set('term','');
-  //   }
-  //   $this->set('series', $series);*/
-  //   $term = '';
-
-  //   if(!empty($_GET['term'])){
-  //     $term = $_GET['term'];
-  //     $this->set('series',$this->serieDAO->selectSearch($term));
-  //   }else{
-  //     $this->set('series',$this->serieDAO->selectAll());
-  //   }
-
-
-  // }
-
-  // public function location(){
-  //   $this->set('title','Location');
-  //   $locations = $this->locationDAO->selectAll();
-  //   $this->set('locations', $locations);
-
   //   if(!empty($_POST['action'])){
   //     if($_POST['action'] == 'insertLocation'){
   //       $insertedLocation = $this->locationDAO->insertLocation($_POST);
@@ -210,7 +144,6 @@ class ProductsController extends Controller {
   //   $this->set('title','Friend');
   //   $friends = $this->friendDAO->selectAll();
   //   $this->set('friends', $friends);
-
   //   if(!empty($_POST['action'])){
   //     if($_POST['action'] == 'insertFriend'){
   //       $insertedFriend = $this->friendDAO->insertFriend($_POST);

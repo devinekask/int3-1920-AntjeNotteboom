@@ -5,8 +5,7 @@
     <title>Book-it</title>
     <?php /* NEW */ ?>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime:400,700|Poppins:400,700|Raleway:900&display=swap" rel="stylesheet">  <body>
     <main>
       <?php
         if(!empty($_SESSION['error'])) {
@@ -38,7 +37,7 @@
                 <li class="header__submenu--item">Het lezen zoals het is</li>
                 <li class="header__submenu--item">De grootste schrijvers van deze tijd</li>
                 <li class="header__submenu--item"> <a class="link__black  submenu__active" href="index.php?page=cart"> Shop</a></li>
-                <li class="header__submenu--item submenu__cart"> <a class="link__black" href="index.php?page=cart">(<?php echo $numItems;?>)</a></li>
+                <li class="header__submenu--item submenu__cart"> <a class="link__black" href="index.php?page=cart">()</a></li>
             </ul>
         </div>
     </header>

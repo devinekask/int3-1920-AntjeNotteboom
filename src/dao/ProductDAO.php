@@ -20,7 +20,7 @@ class ProductDAO extends DAO {
   }
 
   public function insert($data) {
-    $errors = $this->getValidationErrors($data);©
+    $errors = $this->getValidationErrors($data);
     if(empty($errors)) {
       $sql = "INSERT INTO `checkout` (`email`, `name`, `country`, `state`, `city`, `postcode`, `street`, `bus`, `phone`) VALUES (:email, :name, :country, :state, :city, :postcode, :street, :bus, :phone)";
       $stmt = $this->pdo->prepare($sql);
