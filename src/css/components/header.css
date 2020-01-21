@@ -2,11 +2,11 @@
 
 .header {
   background-color: var(--beige);
-  padding-bottom: .5rem;
 }
 
 .header__title {
-  font-family: 'swiss heavy', helvetica, arial, sans-serif;
+  font-family: "Poppins", helvetica, arial, sans-serif;
+  font-weight: bold;
   background-color: var(--red);
   color: var(--white);
   text-transform: uppercase;
@@ -25,10 +25,10 @@
 }
 
 .header__primenu--item {
+  font-family: "Poppins", helvetica, arial, sans-serif;
   text-transform: uppercase;
   margin-left: 1rem;
   margin-right: 1rem;
-  display: block;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   font-size: 1.37rem;
@@ -36,11 +36,11 @@
   color: var(--black);
 }
 
-.primenu__active {
+/* .primenu__active {
   background-color: var(--white);
   color: var(--red);
   display: block;
-}
+} */
 
 .header__submenu {
   background-color: var(--white);
@@ -64,4 +64,23 @@
 
 .submenu__active {
   color: var(--red);
+}
+
+.footer {
+  background-color: black;
+  margin: 0 auto;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer__items{
+  display: flex;
+}
+
+.footer__item {
+  margin: 2rem;
+  text-transform: capitalize;
 }

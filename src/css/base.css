@@ -50,3 +50,32 @@ a {
 .uppercase {
   text-transform: uppercase;
 }
+
+.full__line {
+  border: .4rem solid var(--beige);
+  width: 60%;
+  margin-top: 2rem;
+}
+
+.striped__line {
+  border: 1.5px dashed var(--grey);
+  width: 100%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.striped__line--detail {
+  border-top: 1.4px dashed var(--grey);
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.striped__line--cart {
+  border-top: 1.4px dashed var(--grey);
+  width: 50%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}

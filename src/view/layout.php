@@ -19,17 +19,19 @@
         <h1 class="hidden">Humo</h1>
         <nav class="header__primenu">
             <ul class="header__primenu--items">
-                <li class=""> <a class="header__primenu--item" href="index.php">Home</a></li>
+                <!-- <li class=""> <a class="header__primenu--item" href="index.php">Home</a></li>
                 <li class=""> <a class="header__primenu--item" href="index.php">Actua</a> </li>
-                <li class=""> <a class="header__primenu--item" href="index.php">Humor</a></li>
-                <li class="header__title"> <a class="link__white" href="index.php"> Humo</a></li>
-                <li class=""> <a class="header__primenu--item" href="index.php"> Tv/film</a></li>
-                <li class=""> <a class="header__primenu--item" href="index.php">Muziek</a> </li>
+                <li class=""> <a class="header__primenu--item" href="index.php">Humor</a></li> -->
                 <li class=""> <a class="header__primenu--item primenu__active" href="index.php">Boeken</a> </li>
-                <li class="hidden"> <a class="link__black" href="index.php">zoek</a></li>
+                <li class="header__title"> <a class="link__white" href="index.php"> Humo</a></li>
+                <!-- <li class=""> <a class="header__primenu--item" href="index.php"> Tv/film</a></li>
+                <li class=""> <a class="header__primenu--item" href="index.php">Muziek</a> </li> -->
+
+                <li class="header__primenu--item"> <a class="link__black" href="index.php?page=cart"> Shop (0)</a></li>
+            </ul>
             </ul>
         </nav>
-        <div class="header__submenu">
+        <!-- <div class="header__submenu">
             <ul class="header__submenu--items">
                 <li class="header__submenu--item">Reviews</li>
                 <li class="header__submenu--item">Fictie</li>
@@ -39,16 +41,18 @@
                 <li class="header__submenu--item"> <a class="link__black  submenu__active" href="index.php?page=cart"> Shop</a></li>
                 <li class="header__submenu--item submenu__cart"> <a class="link__black" href="index.php?page=cart">()</a></li>
             </ul>
-        </div>
+        </div> -->
     </header>
       <?php echo $content;?>
     </main>
     <footer class="navigation__bottom footer">
-      <!-- <ul>
-        <li>contact</li>
-        <li>nieuwsletter</li>
+      <ul class="footer__items">
+        <li class="footer__item"> <a class="link__white" href="index.php">Humo</a> </li>
+        <li class="footer__item"> <a class="link__white" href="index.php">Boeken</a> </li>
+        <li class="footer__item"> <a class="link__white" href="index.php?page=cart">Shop</a> </li>
+        <li class="footer__item"> <a class="link__white" href="index.php?page=longreadHome">Longread: Wool</a> </li>
       </ul>
-    </footer> -->
+    </footer>
     <script src="http://localhost:8080/script.js"></script>
   </body>
 </html>
