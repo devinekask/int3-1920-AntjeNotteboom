@@ -1,0 +1,82 @@
+/* .main__checkout */
+
+.checkout {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 80rem;
+}
+
+.checkout__nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.checkout__nav--item {
+  border: solid black .1rem;
+  padding: 1rem;
+  width: 15%;
+}
+
+.checkout__nav--item-active {
+  background-color: var(--yellow);
+}
+
+/* .checkout__article */
+
+.checkout__form {
+  display: flex;
+}
+
+.checkout__form--title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.checkout__form--subtitle {
+  font-size: 1.2rem;
+  margin-bottom: .2rem;
+  margin-top: 1rem;
+}
+
+.checkout__form--label {
+  margin-top: .5rem;
+  margin-bottom: .2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout__form--input {
+  font-size: 1rem;
+  padding: .3rem;
+}
+
+.checkout__form--wrapper {
+  display: flex;
+}
+
+.label__margin {
+  margin-right: 1rem;
+}
+
+.overview__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* PAYMENT */
+
+.payment__form--legend {
+  margin-bottom: .5rem;
+}
+
+/* BEVESTIGING */
+
+.bevestiging {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}

@@ -21,25 +21,31 @@
     </article>
 
     <article class='holston__pt2'>
-      <div class="holston__pt2--background">
+      <div class="holston__pt2--background-top">
         <h3 class="holston__pt2--left">3 jaar eerder</h3>
         <p class="holston__pt2--middle holston__pt2--shout">'<span class="uppercase">'D</span>i<span class="uppercase big__text">T</span> m<span class="uppercase">ee<span class="big__text">n</span></span> <span class="uppercase">j</span>e ni<span class="uppercase">e<span class="big__text">t</span></span>' <span class="small__text">zei Allison</span></p>
         <p class="holston__pt2--right">‘Schat, je zult het niet geloven. Wist je dat er al meer dan 1 opstand is geweest?’</p>
         <p class="holston__pt2--middle big__text">‘Er is veel dat we niet weten over de oude tijden,’ zei Holston.</p>
         <p class="holston__pt2--left">‘Ik ben verschillende oude documenten aan het samenleggen. Als daaruit blijkt dat het effectief waar is, dan betekent het dat er wel vaker opstanden optreden. Misschien zelf 1 keer per generatie.’ zei Allison.</p>
       </div>
-
+      <img class="holston__pt2--left glitch__documents" src="/assets/longread/glitch_documents.png" alt="documents glitch">
       <p class="holston__pt2--right">‘Misschien hadden ze vroeger gewoon nog geen systeem om de sensoren en camera’s te kuisen.</p>
       <p class="holston__pt2--right">Het zicht zal vroeger alleen maar <span class="big__text">waziger</span> geworden zijn tot dat mensen <span class="big__text">KarknzininG</span>  werden. </p>
       <p class="holston__pt2--right">Waardoor ze tenslotte een paar mensen hebben laten kuisen om dingen terug recht te zetten. Of misschien was het gewoon natuurlijke populatiecontrole?.’</p>
+      <img class="holston__pt2--right glitch__camera"src="/assets/longread/glitch_camera.png" alt="glitch camera">
+      <img class="holston__pt2--middle" src="/assets/longread/glitch_hoofd.png" alt="glitch hoofd schudden" width="1650">
+      <div class="hidden">
       <p class="holston__pt2--left">Allison</p>
       <p class="holston__pt2--right">schudde</p>
       <p class="holston__pt2--left">haar</p>
       <p class="holston__pt2--right">hoofd</p>
+      </div>
+
+
       <p class="holston__pt2--left">‘Ik denk het niet. Ik denk niet dat de rebbelen de harde schijven hebben gewist tijden de opstand. Niet zoals ons altijd verteld is alleszins. </p>
       <p class="holston__pt2--left">Ik denk dat WIJ de harde schijven hebben gewist. Onze voorvaderen bedoel ik, niet de rebellen.’</p>
       <p class="holston__pt2--right">‘Waarom zouden wij, de goede mensen, de harde schijven wissen?’ Antwoord Holston.</p>
-      <div>
+      <div class="holston__pt2--background-bottom">
         <p class="holston__pt2--middle">Wie zegt dat wij de goede zijn?</p>
       </div>
     </article>

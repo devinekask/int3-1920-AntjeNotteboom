@@ -1,5 +1,9 @@
     <main class="main__winkel">
+      <div class="winkel__title--line">
+       <div class="full__line"></div>
         <h2 class="winkel__title">Onze Winkel</h2>
+        <div class="full__line"></div>
+      </div>
         <article class="highlight">
             <div class="highlight__wrapper">
                 <h3 class="highlight__title">Highlight van de week:</h3>
@@ -20,12 +24,32 @@
                 </legend>
             </fieldset>
         </div>
+
+        <div class="section__wrapper">
         <section class="section books">
             <h3 class="section__title" id="boeken">Boeken</h3>
             <div class="section__wrapper">
+            <?php foreach($products as $product){
+              if($product['id'] <= 1){
+              ?>
+            <article class="book">
+                    <a class="link__black" href="index.php?page=detail&amp;id=<?php echo $product['id'];?>">
+                        <div class="book__image--wrapper">
+                            <h4 class="book__title"><span class="book__author"><?php echo $product['author'];?></span> <br> <?php echo $product['title'];?></h4>
+                            <img class="book__image" src="<?php echo $product['image'];?>" width="273" height="273"
+                                alt="boek cover van <?php echo $product['title'];?>">
+                        </div>
+                    </a>
+                    <div class="book__price--wrapper">
+                        <p class="book__price"> &euro; <?php echo $product['price'];?></p>
+                        <button class="btn cart__button cart__button--book" type="submit" name="action" value="add"><img src="assets/icons/cart_icon.svg"
+                                alt="voeg to in winkelmandje"></button>
+                    </div>
+                </article>
+            <?php }} ?>
 
             <?php foreach($products as $product){
-              if($product['id'] <= 11){
+              if($product['id'] >=2 && $product['id'] <=11 ){
               ?>
             <article class="book">
                     <a class="link__black" href="index.php?page=detail&amp;id=<?php echo $product['id'];?>">
@@ -44,13 +68,13 @@
                     </div>
                 </article>
             <?php }} ?>
-
             </div>
         </section>
+
+        <div class="striped__line"></div>
         <section class="section extra">
             <h3 class="section__title" id="extra">Extra's</h3>
             <div class="section__wrapper">
-
             <?php foreach($products as $product){
               if($product['id'] >=12 && $product['id'] <=18 ){
               ?>
@@ -64,8 +88,6 @@
                     </a>
                     <div class="book__price--wrapper">
                         <p class="book__price"> &euro; <?php echo $product['price'];?></p>
-                        <p class="book__discount">Korting: &euro; 4,99</p>
-                        <p class="book__ebook">E-book: &euro; 1,99</p>
                         <button class="btn cart__button cart__button--book" type="submit" name="action" value="add"><img src="assets/icons/cart_icon.svg"
                                 alt="voeg to in winkelmandje"></button>
                     </div>
@@ -73,10 +95,11 @@
              <?php }} ?>
               </div>
         </section>
+
+        <div class="striped__line"></div>
         <section class="section abonnement">
             <h3 class="section__title" id="abonnement">Abonnement</h3>
             <div class="section__wrapper">
-
             <?php foreach($products as $product){
               if($product['id'] >=19 ){
               ?>
@@ -90,8 +113,6 @@
                     </a>
                     <div class="book__price--wrapper">
                         <p class="book__price"> &euro; <?php echo $product['price'];?></p>
-                        <p class="book__discount">Korting: &euro; 4,99</p>
-                        <p class="book__ebook">E-book: &euro; 1,99</p>
                         <button class="btn cart__button cart__button--book" type="submit" name="action" value="add"><img src="assets/icons/cart_icon.svg"
                                 alt="voeg to in winkelmandje"></button>
                     </div>
@@ -100,5 +121,6 @@
 
               </div>
         </section>
+        </div>
 
     </main>
