@@ -3,20 +3,20 @@
 class DAO {
 
   // Properties
-  // private static $dbHost = "localhost";
-  // private static $dbName = "humo";
-  // private static $dbUser = "humo";
-  // private static $dbPass = "humo123";
-  // private static $sharedPDO;
-  // protected $pdo;
-
-  // no wifi
   private static $dbHost = "localhost";
   private static $dbName = "humo";
   private static $dbUser = "humo";
   private static $dbPass = "humo123";
   private static $sharedPDO;
   protected $pdo;
+
+  // no wifi
+  // private static $dbHost = "localhost";
+  // private static $dbName = "humo";
+  // private static $dbUser = "humo";
+  // private static $dbPass = "humo123";
+  // private static $sharedPDO;
+  // protected $pdo;
 
 
   // Constructor
@@ -41,3 +41,4 @@ class DAO {
   // Methods
 
 }
+?>
