@@ -4,41 +4,42 @@ class Controller {
 
   public $route;
   protected $viewVars = array();
-  // protected $env = 'development';
+  protected $env = 'development';
 
   public function filter() {
-    // if (basename(dirname(dirname(__FILE__))) != 'src') {
-    //   $this->env = 'production';
-    // }
+    if (basename(dirname(dirname(__FILE__))) != 'src') {
+      $this->env = 'production';
+    }
     call_user_func(array($this, $this->route['action']));
   }
 
-  public function session() {
-    // if(!isset($_SESSION['kar'])) {
-    //   $_SESSION['kar'] = array();
-    // }
-    call_user_func(array($this, $this->route['action']));
-  }
+  // public function session() {
+  //   // if(!isset($_SESSION['kar'])) {
+  //   //   $_SESSION['kar'] = array();
+  //   // }
+  //   call_user_func(array($this, $this->route['action']));
+  // }
 
 
   public function render() {
-
-    // // set js variable according to environment (development / production)
-    // $this->set('js', '<script src="http://localhost:8080/script.js"></script>'); // webpack dev server
-    // // NEW : CSS
-    // $this->set('css', ''); // webpack dev server: css is injected by the script
-    // if ($this->env == 'production') {
-    //   $this->set('js', '<script src="script.js"></script>'); // regular script
-    //   $this->set('css', '<link href="style.css" rel="stylesheet">'); // regular css tag
-    // }
-    $this->createViewVarWithContent();
-    $this->renderInLayout();
-    if (!empty($_SESSION['info'])) {
-      unset($_SESSION['info']);
-    }
-    if (!empty($_SESSION['error'])) {
-      unset($_SESSION['error']);
-    }
+     // load javascript through webpack-dev-server (not MAMP!)
+     $this->set('js', '<script src="http://localhost:8080/script.js"></script>');
+     // webpack dev server: css is injected by the script
+     $this->set('css', '');
+     if ($this->env == 'production') {
+       // regular script in production
+       $this->set('js', '<script src="script.js"></script>');
+        // regular css in production
+       $this->set('css', '<link href="style.css" rel="stylesheet">');
+     }
+     $this->createViewVarWithContent();
+     $this->renderInLayout();
+     if (!empty($_SESSION['info'])) {
+       unset($_SESSION['info']);
+     }
+     if (!empty($_SESSION['error'])) {
+       unset($_SESSION['error']);
+     }
   }
 
   public function set($variableName, $value) {
