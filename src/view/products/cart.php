@@ -1,9 +1,10 @@
 <main class="main__detail">
+  
  <a class="back" href="index.php">&#60; terug</a>
  <section class="cart">
    <h2 class="hidden">Cart</h2>
 
-   <article>
+   <article class="article__cart--item">
      <div class="cart__item">
        <div class="cart__title--image">
          <h3 class="cart__item--title">Wool <br> <span class="cart__item--author">Hugh Howey</span></h3>
@@ -11,18 +12,14 @@
        </div>
        <div class="cart__item--prices">
           <p class="cart__item--price">Paperback: &euro;12,99</p>
-          <p class="cart__item--price book__discount">Korting: &euro;4;99</p>
-          <p class="cart__item--price book__discount--text">U vindt de kortingcode op de flap rond Humo van die betreffende week</p>
-       </div>
-       <div class="">
-         <input class="cart__item--quantity" type="number" placeholder="0">
+          <input class="cart__item--quantity" type="number" placeholder="0">
        </div>
        <a class="cart__item--delete link__black" href="">x</a>
      </div>
      <div class="striped__line--cart"></div>
    </article>
 
-   <article>
+   <article class="article__cart--item">
      <div class="cart__item">
        <div class="cart__title--image">
          <h3 class="cart__item--title">Wool <br> <span class="cart__item--author">Hugh Howey</span></h3>
@@ -30,12 +27,8 @@
        </div>
        <div class="cart__item--prices">
           <p class="cart__item--price">Paperback: &euro;12,99</p>
-          <p class="cart__item--price book__discount">Korting: &euro;4;99</p>
-          <p class="cart__item--price book__discount--text">U vindt de kortingcode op de flap rond Humo van die betreffende week</p>
-       </div>
-       <div class="">
-         <input class="cart__item--quantity" type="number" placeholder="0">
-       </div>
+          <input class="cart__item--quantity" type="number" placeholder="0">
+        </div>
        <a class="cart__item--delete link__black" href="">x</a>
      </div>
      <div class="striped__line--cart"></div>
