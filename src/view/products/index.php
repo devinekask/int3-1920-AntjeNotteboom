@@ -4,7 +4,8 @@
         <h2 class="winkel__title">Onze Winkel</h2>
         <div class="full__line"></div>
       </div>
-        <article class="highlight">
+        <article class="highlight__article">
+          <div class="highlight">
             <div class="highlight__wrapper">
                 <h3 class="highlight__title">Highlight van de week:</h3>
                 <p class="highlight__book"><a class="link__black" href="index.php?page=detail&id=2">Wool - Hugh Howey</a></p>
@@ -12,22 +13,30 @@
                         class="cart__button" href=""><img src="assets/icons/cart_icon.svg"
                             alt="voeg to in winkelmandje"></a></p>
             </div>
-            <img class="highlight__img" src="assets/books/wool.jpg" alt="boek cover van Wool" width=""
-                height="">
+            <picture class="highlight__img">
+              <source
+               media="(max-width: 499px)"
+               srcset="assets/books/wool_small.jpg">
+              <img src="assets/books/wool.jpg" alt="boek cover van Wool" width=""height="">
+           </picture>
+          </div>
         </article>
-        <div class="filter">
+
+        <div class="filter" id="boeken">
             <fieldset class="filter__options">
-                <legend class="filter__label"> <span class="bold"> Filter:</span>
+              <legend class="filter__label"> <span class="bold"> Filter:</span>
+                <div class="filter__options--wrapper">
                   <a  class="filter__option link__black" href="#boeken">Boeken</a>
                   <a  class="filter__option link__black" href="#extra">Extra</a>
                   <a  class="filter__option link__black" href="#abonnement">Abonnement</a>
-                </legend>
+                </div>
+              </legend>
             </fieldset>
         </div>
 
         <div class="section__wrapper">
         <section class="section books">
-            <h3 class="section__title" id="boeken">Boeken</h3>
+            <h3 class="section__title" >Boeken</h3>
             <div class="section__wrapper">
             <?php foreach($products as $product){
               if($product['id'] <= 1){
@@ -71,9 +80,9 @@
             </div>
         </section>
 
-        <div class="striped__line"></div>
-        <section class="section extra">
-            <h3 class="section__title" id="extra">Extra's</h3>
+        <div class="striped__line" id="extra"></div>
+        <section class="section extra" >
+            <h3 class="section__title" >Extra's</h3>
             <div class="section__wrapper">
             <?php foreach($products as $product){
               if($product['id'] >=12 && $product['id'] <=18 ){
@@ -96,28 +105,23 @@
               </div>
         </section>
 
-        <div class="striped__line"></div>
-        <section class="section abonnement">
-            <h3 class="section__title" id="abonnement">Abonnement</h3>
-            <div class="section__wrapper">
-            <?php foreach($products as $product){
+        <div class="striped__line" id="abonnement"></div>
+        <section class="section__abonnement" >
+           <h3 class="section__title" >Abonnement</h3>
+           <div class=" section__wrapper--abonnement">
+          <?php foreach($products as $product){
               if($product['id'] >=19 ){
               ?>
-            <article class="book">
-                    <a class="link__black" href="index.php?page=detail&amp;id=<?php echo $product['id'];?>">
-                        <div class="book__image--wrapper">
-                            <h4 class="book__title"><span class="book__author"><?php echo $product['author'];?></span> <br> <?php echo $product['title'];?></h4>
-                            <img class="book__image" src="<?php echo $product['image'];?>" width="273" height="273"
-                                alt="boek cover van <?php echo $product['title'];?>">
-                        </div>
-                    </a>
-                    <div class="book__price--wrapper">
-                        <p class="book__price"> &euro; <?php echo $product['price'];?></p>
-                        <button class="btn cart__button cart__button--book" type="submit" name="action" value="add"><img src="assets/icons/cart_icon.svg"
-                                alt="voeg to in winkelmandje"></button>
-                    </div>
-                </article>
-             <?php }} ?>
+            <article class="abonnement">
+                <h4 class="book__title"><span class="book__author"><?php echo $product['author'];?></span> <br> <?php echo $product['title'];?></h4>
+                <div class="abonnement__price">
+                 <p class="book__price abonnement__price--item"> &euro; <?php echo $product['price'];?>/maand</p>
+                 <button class="btn cart__button cart__button--book" type="submit" name="action" value="add"><img src="assets/icons/cart_icon.svg"
+                  alt="voeg to in winkelmandje"></button>
+                </div>
+             </article>
+             <div class="striped__line--detail"></div>
+            <?php }} ?>
 
               </div>
         </section>

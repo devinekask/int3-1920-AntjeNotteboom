@@ -12,7 +12,15 @@
   text-transform: uppercase;
   font-size: 4rem;
   display: block;
+  height: 100%;
   padding: .5rem 1rem;
+   @media (--only-mobile-screen) {
+    font-size: 2rem;
+    padding: .5rem .5rem;
+  };
+   @media (--only-ipad-screen) {
+    font-size: 2rem;
+  }
 }
 
 /* .header__primenu */
@@ -34,6 +42,22 @@
   font-size: 1.37rem;
   line-height: 4.37rem;
   color: var(--black);
+
+  @media (--only-mobile-screen) {
+    font-size: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
+  };
+
+  @media (--only-ipad-screen) {
+    font-size: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
 }
 
 /* .primenu__active {
@@ -76,11 +100,29 @@
   justify-content: space-evenly;
 }
 
-.footer__items{
+.footer__items {
   display: flex;
+  @media (--only-mobile-screen) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  @media (--only-ipad-screen) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .footer__item {
   margin: 2rem;
   text-transform: capitalize;
+  @media (--only-mobile-screen) {
+    font-size: 1rem;
+  };
+
+  @media (--only-ipad-screen) {
+    font-size: 1rem;
+  }
 }

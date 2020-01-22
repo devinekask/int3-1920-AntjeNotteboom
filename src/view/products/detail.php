@@ -3,6 +3,7 @@
         <a class="back" href="index.php">&#60; terug</a>
         <section class="detail__product">
             <h2 class="hidden">Detail</h2>
+
             <article class="product__wrapper">
                 <div class="product__images--wrapper">
                     <img class="product__image" src="<?php echo $product['image'];?>"
@@ -22,18 +23,19 @@
                         <p class="book__discount">Korting: &euro;4.99</p>
                         <p class="book__discount--text">U vindt de kortingcode op de flap rond Humo van die betreffende week</p>
                         </div>
-
                     </div>
 
                     <p class="book__ebook">E-book: &euro;1.99</p>
 
                     <div class="striped__line--detail"></div>
-                    <fieldset class="filter__options">
-                        <legend class="filter__label">
-                            <input class="" type="radio" name="book" id="paperback"> <label class="book__option"
-                                for="paperback">Paperback &euro;12.99 </label>
-                            <input class="" type="radio" name="book" id="e-book"><label class="book__option"
-                                for="e-book">E-book &euro;1.99</label>
+                    <fieldset class="book__options">
+                        <legend class="book__options--label">
+                            <label class="book__option" for="paperback">
+                              <input class="book__option--input" type="radio" name="book" id="paperback">
+                             Paperback &euro;12.99 </label>
+                            <label class="book__option" for="e-book">
+                              <input class="book__option--input" type="radio" name="book" id="e-book">
+                            E-book &euro;1.99</label>
                         </legend>
                     </fieldset>
                     <a class="cart__button cart__button--product" href="index.php?page=cart"> + In mijn winkelwagen <img

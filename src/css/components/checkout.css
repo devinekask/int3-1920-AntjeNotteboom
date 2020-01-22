@@ -4,19 +4,62 @@
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
-  width: 80rem;
+  width: 80%;
+
+  @media (--only-ipad-screen) {
+    width: 50%;
+
+  }
+
+  @media (--only-mobile2-screen) {
+    width: 80%;
+
+  }
+
+  @media (--only-ipadmini-screen) {
+    flex-direction: column-reverse;
+    justify-content: center;
+
+  }
+}
+
+.checkout__article {
+  @media (--only-ipad-screen) {
+    margin-bottom: 5rem;
+  }
 }
 
 .checkout__nav {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
   margin-bottom: 2rem;
+
+  @media (--only-ipad-screen) {
+    width: 90%;
+  }
+
+  @media (--only-mobile2-screen) {
+    width: 100%;
+  }
+
 }
 
 .checkout__nav--item {
   border: solid black .1rem;
   padding: 1rem;
-  width: 15%;
+  width: 20%;
+
+  @media (--only-mobile2-screen) {
+    width: 100%;
+    font-size: .8rem;
+  }
+
+  @media (--only-ipad-screen) {
+    width: 60%;
+    font-size: .8rem;
+  }
+
 }
 
 .checkout__nav--item-active {

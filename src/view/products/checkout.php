@@ -41,7 +41,7 @@
 
          </fieldset>
    </article>
-   <article>
+   <article class="checkout__article">
      <h3 class="hidden">overzicht bestelling</h3>
      <div class="overview__item">
      <p class="bold">Wool</p>
