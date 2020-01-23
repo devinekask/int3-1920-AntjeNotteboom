@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jan 22, 2020 at 12:28 PM
+-- Generation Time: Jan 23, 2020 at 11:05 AM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.10
 
@@ -13,6 +13,38 @@ SET time_zone = "+00:00";
 --
 -- Database: `humo`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `checkout`
+--
+
+CREATE TABLE `checkout` (
+  `id` int(11) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `country` varchar(255) NOT NULL,
+  `state` varchar(255) NOT NULL,
+  `city` varchar(255) NOT NULL,
+  `postcode` int(11) NOT NULL,
+  `street` varchar(255) NOT NULL,
+  `bus` int(11) NOT NULL,
+  `phone` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `checkout_product_variants`
+--
+
+CREATE TABLE `checkout_product_variants` (
+  `id` int(11) NOT NULL,
+  `checkout_id` int(11) NOT NULL,
+  `product_variant_id` int(11) NOT NULL,
+  `amount` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -56,9 +88,84 @@ INSERT INTO `products` (`id`, `title`, `author`, `description`, `price`, `image`
 (20, '24 maanden', '', '', '14.36', 'assets/books/24maanden.jpg'),
 (21, '35 maanden', '', '', '12.76', 'assets/books/35maanden.jpg');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `product_images`
+--
+
+CREATE TABLE `product_images` (
+  `id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `image` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `product_variants`
+--
+
+CREATE TABLE `product_variants` (
+  `id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `price` decimal(5,2) NOT NULL,
+  `is_default` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `product_variants`
+--
+
+INSERT INTO `product_variants` (`id`, `product_id`, `name`, `price`, `is_default`) VALUES
+(1, 1, '<p class=\"hidden\">Boekenreeks</p>', '48.95', 1),
+(2, 2, 'Paperback', '12.99', 1),
+(3, 2, 'E-book', '1.99', 0),
+(4, 3, 'Paperback', '12.99', 1),
+(5, 3, 'E-book', '1.99', 0),
+(6, 4, 'Paperback', '12.99', 1),
+(7, 4, 'E-book', '1.99', 0),
+(8, 5, 'Paperback', '12.99', 1),
+(9, 5, 'E-book', '1.99', 0),
+(10, 6, 'Paperback', '12.99', 1),
+(11, 6, 'E-book', '1.99', 0),
+(12, 7, 'Paperback', '12.99', 1),
+(13, 7, 'E-book', '1.99', 0),
+(14, 8, 'Paperback', '12.99', 1),
+(15, 8, 'E-book', '1.99', 0),
+(16, 9, 'Paperback', '12.99', 1),
+(17, 9, 'E-book', '1.99', 0),
+(18, 10, 'Paperback', '12.99', 1),
+(19, 10, 'E-book', '1.99', 0),
+(20, 11, 'Paperback', '12.99', 1),
+(21, 11, 'E-book', '1.99', 0),
+(22, 12, '<p class=\"hidden\">Bladwijzer</p>', '4.50', 1),
+(23, 13, '<p class=\"hidden\">Boekensteun</p>', '18.50', 1),
+(24, 14, '<p class=\"hidden\">Agenda</p>', '16.95', 1),
+(25, 15, '<p class=\"hidden\">Leeslichtje Retro</p>', '18.50', 1),
+(26, 16, '<p class=\"hidden\">mini leeslichtje</p>', '9.90', 1),
+(27, 17, '<p class=\"hidden\">groot vergrootglas</p>', '12.50', 1),
+(28, 18, '<p class=\"hidden\">professioneel vergrootglas</p>', '7.50', 1),
+(29, 19, '<p class=\"hidden\">12maanden</p>', '15.95', 1),
+(30, 20, '<p class=\"hidden\">24maanden</p>', '14.36', 1),
+(31, 21, '<p class=\"hidden\">35maanden</p>', '12.76', 1);
+
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `checkout`
+--
+ALTER TABLE `checkout`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `checkout_product_variants`
+--
+ALTER TABLE `checkout_product_variants`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `products`
@@ -67,11 +174,47 @@ ALTER TABLE `products`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `product_images`
+--
+ALTER TABLE `product_images`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `product_variants`
+--
+ALTER TABLE `product_variants`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `checkout`
+--
+ALTER TABLE `checkout`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `checkout_product_variants`
+--
+ALTER TABLE `checkout_product_variants`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+
+--
+-- AUTO_INCREMENT for table `product_images`
+--
+ALTER TABLE `product_images`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `product_variants`
+--
+ALTER TABLE `product_variants`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;

@@ -20,7 +20,7 @@
                     <div class="product__price--wrapper">
                         <p class="book__price">&euro;<?php echo $product['price'];?></p>
                         <div class="book__discount--wrapper">
-                        <p class="book__discount">Korting: &euro;4.99</p>
+                        <p class="book__discount"> Korting: &euro;4.99</p>
                         <p class="book__discount--text">U vindt de kortingcode op de flap rond Humo van die betreffende week</p>
                         </div>
                     </div>

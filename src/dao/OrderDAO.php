@@ -41,7 +41,30 @@ class OrderDAO extends DAO {
     return false;
   }
 
-  public function validate($data){
+  public function update($id, $data) {
+    $errors = $this->getValidationErrors($data);
+    if(empty($errors)) {
+      $sql = "UPDATE `products` SET `title` = :title, `author` = :author, `price` = :price, WHERE `id` = :id";
+      $stmt = $this->pdo->prepare($sql);
+      $stmt->bindValue(':title', $data['title']);
+      $stmt->bindValue(':author', $data['author']);
+      $stmt->bindValue(':price', $data['price']);
+      $stmt->bindValue(':id', $id);
+      if($stmt->execute()) {
+        return $this->selectById($id);
+      }
+    }
+    return false;
+  }
+
+  public function delete($id) {
+    $sql = "DELETE FROM `products` WHERE `id` = :id";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->bindValue(':id', $id);
+    return $stmt->execute();
+  }
+
+  public function getValidationErrors($data){
     $errors = [];
     if (empty($data['email'])) {
       $errors['email'] = 'The email is required';

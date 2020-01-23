@@ -41,7 +41,18 @@ class ProductDAO extends DAO {
     return false;
   }
 
-  
+  public function selectIdByVariant($product_id) {
+    $sql = "SELECT product_variants.*, products.title, products.author, products.description, products.image
+    FROM product_variants INNER JOIN products
+    ON products.id=product_variants.product_id
+    WHERE product_id=product_variants.product_id";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->bindValue(':product_id', $product_id);
+    $stmt->execute();
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+  }
+
+
   // public function insert($data) {
   //   $errors = $this->getValidationErrors($data);
   //   if(empty($errors)) {
