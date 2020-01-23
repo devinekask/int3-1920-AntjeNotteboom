@@ -10,12 +10,17 @@ class Controller {
     if (basename(dirname(dirname(__FILE__))) != 'src') {
       $this->env = 'production';
     }
+    // call_user_func(array($this, $this->route['action']));
+
+    if(!isset($_SESSION['cart'])) {
+      $_SESSION['cart'] = array();
+    }
     call_user_func(array($this, $this->route['action']));
   }
 
   // public function session() {
-  //   // if(!isset($_SESSION['kar'])) {
-  //   //   $_SESSION['kar'] = array();
+  //   // if(!isset($_SESSION['cart'])) {
+  //   //   $_SESSION['cart'] = array();
   //   // }
   //   call_user_func(array($this, $this->route['action']));
   // }
@@ -32,6 +37,11 @@ class Controller {
         // regular css in production
        $this->set('css', '<link href="style.css" rel="stylesheet">');
      }
+    $numItems = 0;
+     foreach ($_SESSION['cart'] as $productId => $info) {
+       $numItems += $info['quantity'];
+     }
+     $this->set('numItems', $numItems);
      $this->createViewVarWithContent();
      $this->renderInLayout();
      if (!empty($_SESSION['info'])) {

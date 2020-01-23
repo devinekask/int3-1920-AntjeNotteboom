@@ -13,10 +13,10 @@
       <div>
        <h3 class="hidden">holsotn pt1</h3>
         <p class="holston__text">Holston wist dat als hij naar de schermen, die de buitenwereld projecteren, zou kijken, voorbij de wazigheid van de vuile camera’s, dicht bij de top van de heuvel, hij haar vorm kon zien. Daar op die heuvel, kon hij zijn vrouw zien liggen. Ze lag daar als een slapende steen, rondom haar de giftige lucht die haar wegdroeg. </p>
-         <img class="misschien" src="/assets/longread/misschien.png" alt="misschien">
+         <img class="misschien" src="./assets/longread/misschien.png" alt="misschien">
          <img src="" alt="">
         <p class="holstontext">Het was moeilijk te zien en niet duidelijk te onderscheiden. Daarnaast was er natuurlijk ook weinig vertrouwen in dit zicht. Er was eigenlijk veel twijfel over wat echt en niet echt was. Dus Holston besloot gewoon niet te kijken.</p>
-         <img class="buiten" src="/assets/longread/ik wil naar buiten.png" alt="ik wil naar buiten">
+         <img class="buiten" src="./assets/longread/ik wil naar buiten.png" alt="ik wil naar buiten">
       </div>
     </article>
 
@@ -28,12 +28,12 @@
         <p class="holston__pt2--middle big__text">‘Er is veel dat we niet weten over de oude tijden,’ zei Holston.</p>
         <p class="holston__pt2--left">‘Ik ben verschillende oude documenten aan het samenleggen. Als daaruit blijkt dat het effectief waar is, dan betekent het dat er wel vaker opstanden optreden. Misschien zelf 1 keer per generatie.’ zei Allison.</p>
       </div>
-      <img class="holston__pt2--left glitch__documents" src="/assets/longread/glitch_documents.png" alt="documents glitch">
+      <img class="holston__pt2--left glitch__documents" src="./assets/longread/glitch_documents.png" alt="documents glitch">
       <p class="holston__pt2--right">‘Misschien hadden ze vroeger gewoon nog geen systeem om de sensoren en camera’s te kuisen.</p>
       <p class="holston__pt2--right">Het zicht zal vroeger alleen maar <span class="big__text">waziger</span> geworden zijn tot dat mensen <span class="big__text">KarknzininG</span>  werden. </p>
       <p class="holston__pt2--right">Waardoor ze tenslotte een paar mensen hebben laten kuisen om dingen terug recht te zetten. Of misschien was het gewoon natuurlijke populatiecontrole?.’</p>
-      <img class="holston__pt2--right glitch__camera"src="/assets/longread/glitch_camera.png" alt="glitch camera">
-      <img class="holston__pt2--middle" src="/assets/longread/glitch_hoofd.png" alt="glitch hoofd schudden" width="1650">
+      <img class="holston__pt2--right glitch__camera"src="./assets/longread/glitch_camera.png" alt="glitch camera">
+      <img class="holston__pt2--middle" src="./assets/longread/glitch_hoofd.png" alt="glitch hoofd schudden" width="1650">
       <div class="hidden">
       <p class="holston__pt2--left">Allison</p>
       <p class="holston__pt2--right">schudde</p>

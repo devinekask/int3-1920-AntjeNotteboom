@@ -8,7 +8,6 @@
 }
 
 .home__longread--article {
-  width: 96rem;
   margin: auto;
   height: 100%;
   display: flex;
@@ -17,6 +16,7 @@
   align-items: center;
   z-index: 0;
   position: relative;
+  background-image: url(/src/assets/longread/background_home.jpg);
 
 }
 
@@ -25,6 +25,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 .home__longread--image {
@@ -39,12 +40,28 @@
   text-align: center;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-weight: bold;
+
+  @media (--only-ipad-screen) {
+    font-size: 4rem;
+  }
+
+  @media (--only-mobile2-screen) {
+    font-size: 2rem;
+  }
 }
 
 .longread__text--text {
   color: var(--white);
   font-size: 2.5rem;
   margin-top: 2rem;
+
+  @media (--only-ipad-screen) {
+    font-size: 2rem;
+  }
+
+  @media (--only-mobile2-screen) {
+    font-size: 1.4rem;
+  }
 
 }
 
@@ -59,7 +76,7 @@
   border-radius: 1rem;
   font-size: 2rem;
   padding: 1rem 2rem;
-  margin:  1rem;
+  margin: 1rem;
   width: 8rem;
   border: none;
 }
@@ -122,9 +139,9 @@
 
 /* LONGREAD */
 
-.longread__background {
+/* .longread__background {
 
-}
+} */
 
 .longread__section {
   background-color: var(--darkgrey);
@@ -135,7 +152,7 @@
 }
 
 .longread__header {
-  background-image: url(/assets/longread/background_longread.jpg);
+  background-image: url(/src/assets/longread/background_longread.jpg);
   height: 100%;
   width: 100%;
   display: flex;
@@ -147,7 +164,7 @@
 
 .longread__header--title {
   font-size: 7rem;
-  font-family: 'poppins', Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   color: var(--white);
 }
 
@@ -162,7 +179,7 @@
 /* HOLSToN PT1 */
 
 .longread__holston--pt1 {
-  background-image: url(/assets/longread/background_longread_holston.jpg);
+  background-image: url(/src/assets/longread/background_longread_holston.jpg);
   padding: 7rem;
   color: var(--white);
 }
@@ -186,7 +203,7 @@ Repeat(6,1fr)
 calculateRem(20px) calculateRem(50px) */
 
 .holston__pt2--background-top {
-  background-image: url(/assets/longread/glitch_blocks_top.png);
+  background-image: url(/src/assets/longread/glitch_blocks_top.png);
   width: 100%;
   height: 35rem;
   grid-column: 1/ span 12;
@@ -230,7 +247,7 @@ calculateRem(20px) calculateRem(50px) */
 }
 
 .holston__pt2--background-bottom {
-  background-image: url(/assets/longread/glitch_blocks_bottom.png);
+  background-image: url(/src/assets/longread/glitch_blocks_bottom.png);
   width: 100%;
   height: 35rem;
   grid-column: 1/ span 12;
@@ -244,6 +261,4 @@ calculateRem(20px) calculateRem(50px) */
   grid-row: 5/7;
   grid-column: 7/12;
   margin-left: 20rem;
-  position: absolute;
-  z-index: 0;
 }
