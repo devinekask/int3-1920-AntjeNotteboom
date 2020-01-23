@@ -37,9 +37,22 @@ a {
   display: block;
   color: var(--black);
   margin-bottom: 2rem;
+
   &:hover {
     transition: .2s ease-in-out;
     transform: scale(1.2);
+  }
+
+  @media (--only-mobile2-screen) {
+    margin-left: 2rem;
+  }
+
+  @media (--only-ipad-screen) {
+    margin-left: 4rem;
+  }
+
+  @media (--only-ipad2-screen) {
+    margin-left: 8rem;
   }
 }
 
@@ -78,4 +91,12 @@ a {
   margin: auto;
   margin-top: 2%;
   margin-bottom: 2%;
+
+  @media (--only-mobile2-screen) {
+    width: 90%;
+  }
+
+  @media (--only-ipad-screen) {
+    width: 70%;
+  }
 }

@@ -1,6 +1,6 @@
 <a class="back" href="index.php">&#60; terug</a>
 <main class="home__longread">
-<img class="home__longread--image" src="/assets/longread/background_home.jpg" alt="glitch landscape" width="100%" height="1024">
+<!-- <img class="home__longread--image" src="./assets/longread/background_home.jpg" alt="glitch landscape" width="100%" height="1024"> -->
 <article class="home__longread--article">
   <div class="home__longread--text">
 
@@ -11,6 +11,6 @@
      <a class="longread__button" href="index.php?page=longread"> No </a>
      </div>
     </div>
-   
+
 </article>
 </main>

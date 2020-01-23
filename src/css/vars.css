@@ -16,7 +16,10 @@
 
 }
 
-@custom-media --only-mobile-screen (width >= 320px);
-@custom-media --only-ipad-screen (width >= 425px);
+@custom-media --only-mobile-screen (width <= 320px);
+@custom-media --only-mobile2-screen (width <= 370px);
+@custom-media --only-ipad-screen (width <= 730px);
+@custom-media --only-ipad2-screen (width >= 730px);
+@custom-media --only-ipadmini-screen (width <= 525px);
 @custom-media --only-medium-screen (width >= 1100px);
 @custom-media --only-medium2-screen (width <= 1100px);
