@@ -9,7 +9,7 @@
             <div class="highlight__wrapper">
                 <h3 class="highlight__title">Highlight van de week:</h3>
                 <p class="highlight__book"><a class="link__black" href="index.php?page=detail&id=2">Wool - Hugh Howey</a></p>
-                <p class="highlight__text">Lees de <a class="highlight__link" href="index.php?page=longreadHome">longread</a> of koop het boek <a
+                <p class="highlight__text">Lees de <a class="highlight__link" href="index.php?page=longreadHome">longread</a> of koop het boek<a
                         class="cart__button" href=""><img src="assets/icons/cart_icon.svg"
                             alt="voeg to in winkelmandje"></a></p>
             </div>
@@ -51,8 +51,13 @@
                     </a>
                     <div class="book__price--wrapper">
                         <p class="book__price"> &euro; <?php echo $product['price'];?></p>
-                        <button class="btn cart__button cart__button--book" type="submit" name="action" value="add"><img src="assets/icons/cart_icon.svg"
+
+                        <form class="cart__button--wrapper" method="post" action="index.php?page=cart" >
+                          <input type="hidden" name="product_id" value="<?php echo $product['id'];?>" />
+                          <button class="cart__button cart__button--book btn" type="submit" name="action" value="add"><img src="assets/icons/cart_icon.svg"
                                 alt="voeg to in winkelmandje"></button>
+                       </form>
+
                     </div>
                 </article>
             <?php }} ?>
@@ -72,8 +77,11 @@
                         <p class="book__price"> &euro; <?php echo $product['price'];?></p>
                         <p class="book__discount">Korting: &euro; 4,99</p>
                         <p class="book__ebook">E-book: &euro; 1,99</p>
-                        <button class="btn cart__button cart__button--book" type="submit" name="action" value="add"><img src="assets/icons/cart_icon.svg"
+                        <form class="cart__button--wrapper" method="post" action="index.php?page=cart">
+                          <input type="hidden" name="product_id"  value="<?php echo $product['id'];?>" />
+                          <button class="cart__button cart__button--book btn" type="submit" name="action" value="add"><img src="assets/icons/cart_icon.svg"
                                 alt="voeg to in winkelmandje"></button>
+                       </form>
                     </div>
                 </article>
             <?php }} ?>
@@ -97,8 +105,11 @@
                     </a>
                     <div class="book__price--wrapper">
                         <p class="book__price"> &euro; <?php echo $product['price'];?></p>
-                        <button class="btn cart__button cart__button--book" type="submit" name="action" value="add"><img src="assets/icons/cart_icon.svg"
+                        <form class="cart__button--wrapper" method="post" action="index.php?page=cart">
+                          <input type="hidden" name="product_id" value="<?php echo $product['id'];?>" />
+                          <button class="cart__button cart__button--book btn" type="submit" name="action" value="add"><img src="assets/icons/cart_icon.svg"
                                 alt="voeg to in winkelmandje"></button>
+                       </form>
                     </div>
                 </article>
              <?php }} ?>
@@ -116,8 +127,11 @@
                 <h4 class="book__title"><span class="book__author"><?php echo $product['author'];?></span> <br> <?php echo $product['title'];?></h4>
                 <div class="abonnement__price">
                  <p class="book__price abonnement__price--item"> &euro; <?php echo $product['price'];?>/maand</p>
-                 <button class="btn cart__button cart__button--book" type="submit" name="action" value="add"><img src="assets/icons/cart_icon.svg"
-                  alt="voeg to in winkelmandje"></button>
+                 <form class="cart__button--wrapper" method="post" action="index.php?page=cart">
+                          <input type="hidden" name="product_id" value="<?php echo $product['id'];?>" />
+                          <button class="cart__button cart__button--book btn" type="submit" name="action" value="add"><img src="assets/icons/cart_icon.svg"
+                                alt="voeg to in winkelmandje"></button>
+                 </form>
                 </div>
              </article>
              <div class="striped__line--detail"></div>

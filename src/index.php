@@ -21,19 +21,19 @@ $routes = array(
     'action' => 'detail'
   ),
   'cart' => array(
-    'controller' => 'Products',
+    'controller' => 'Orders',
     'action' => 'cart'
   ),
   'checkout' => array(
-    'controller' => 'Products',
+    'controller' => 'Orders',
     'action' => 'checkout'
   ),
   'payment' => array(
-    'controller' => 'Products',
+    'controller' => 'Orders',
     'action' => 'payment'
   ),
   'message' => array(
-    'controller' => 'Products',
+    'controller' => 'Orders',
     'action' => 'message'
   ),
   'longreadHome' => array(
