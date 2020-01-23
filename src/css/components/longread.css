@@ -209,9 +209,6 @@
 
 /* HOLSToN PT1 */
 
-.longread__holston--pt1 {
-  background-image: url(../../assets/longread/background_longread_holston.jpg);
-  padding: 7rem;
 .holston__pt1 {
   background-image: url(../../assets/longread/background_longread_holston.jpg);
   background-size: cover;
@@ -279,6 +276,7 @@ calculateRem(20px) calculateRem(50px) */
   height: 35rem;
   grid-column: 1/13;
 } */
+}
 
 .shout__wrapper {
   display: flex;
@@ -411,6 +409,8 @@ calculateRem(20px) calculateRem(50px) */
   width: 100%;
   height: 35rem;
   grid-column: 1/ span 12;
+}
+
 .article__more--image {
   margin-left: 25%;
 }
