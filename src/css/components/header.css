@@ -5,7 +5,7 @@
 }
 
 .header__title {
-  font-family: "Poppins", helvetica, arial, sans-serif;
+  font-family: "Oswald", helvetica, arial, sans-serif;
   font-weight: bold;
   background-color: var(--red);
   color: var(--white);
@@ -29,17 +29,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'swiss bold', helvetica, arial, sans-serif;
 }
 
 .header__primenu--item {
-  font-family: "Poppins", helvetica, arial, sans-serif;
+  font-family: "Oswald", helvetica, arial, sans-serif;
   text-transform: uppercase;
   margin-left: 1rem;
   margin-right: 1rem;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
-  font-size: 1.37rem;
+  font-size: 1.5rem;
   line-height: 4.37rem;
   color: var(--black);
 
@@ -58,36 +57,6 @@
     padding-right: 0rem;
     padding-left: 0rem;
   }
-}
-
-/* .primenu__active {
-  background-color: var(--white);
-  color: var(--red);
-  display: block;
-} */
-
-.header__submenu {
-  background-color: var(--white);
-}
-
-.header__submenu--items {
-  background-color: var(--white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-}
-
-.header__submenu--item {
-  text-transform: uppercase;
-  margin-right: 1rem;
-  margin-left: 1rem;
-  font-size: 1rem;
-  font-family: 'swiss bold', helvetica, arial, sans-serif;
-}
-
-.submenu__active {
-  color: var(--red);
 }
 
 .footer {

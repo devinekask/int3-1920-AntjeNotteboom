@@ -1,4 +1,4 @@
-<main class="main__longread longread__error">
+<main class="longread__error">
 <a class="back" href="index.php?page=longreadHome">&#60; terug</a>
 <img class="home__longread--image" src="./assets/longread/background_error.jpg" alt="glitch" width="100%" height="1024">
   <section class=" error__longread--section">

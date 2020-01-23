@@ -7,7 +7,7 @@
     <title>Book-it</title>
     <!-- <?php echo $css;?> -->
      <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Courier+Prime:400,700|Poppins:400,700|Raleway:900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime:400,700|Oswald|Love+Ya+Like+A+Sister|Playfair+Display|Poppins:400,700|Raleway:400&display=swap" rel="stylesheet">
   </head>
     <body>
       <header class="header">
@@ -22,7 +22,7 @@
                 <!-- <li class=""> <a class="header__primenu--item" href="index.php"> Tv/film</a></li>
                 <li class=""> <a class="header__primenu--item" href="index.php">Muziek</a> </li> -->
 
-                <li class="header__primenu--item"> <a class="link__black" href="index.php?page=cart"> Shop (<?php echo $numItems;?>)</a></li>
+                <li class=""> <a class="header__primenu--item link__black" href="index.php?page=cart"> Shop (<?php echo $numItems;?>)</a></li>
             </ul>
             </ul>
         </nav>
