@@ -19,10 +19,11 @@ class ProductsController extends Controller {
   }
 
   public function detail(){
-    if(empty($_GET['id']) || !$product = $this->productDAO->selectById($_GET['id'])) {
+    if(empty($_GET['id']) || !$product = $this->productDAO->selectById($_GET['id']) AND selectIdByVariant($_GET['product_id'])) {
       $_SESSION['error'] = 'Geen boek gevonden';
       header('Location: index.php');
     }
+    // $product = $this->productDAO->selectIdByVariant($_GET['product_id']);
     $this->set('product', $product);
     $this->set('title', "detail");
 

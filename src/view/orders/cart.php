@@ -21,9 +21,9 @@
           <input class="cart__item--quantity" type="text" name="quantity[<?php echo $product['product']['id'];?>]" value="<?php echo $product['quantity'];?>">
        </div>
 
-       <div class="cart__item--delete link__black">
-        <button class="cart__item--delete link__black btn" type="submit" name="remove" value="<?php echo $product['product']['id'];?>">x</button>
-       </div>
+       <!-- <div class="cart__item--delete link__black"> -->
+       <td class='remove-item'><button class="cart__item--delete link__black remove-from-cart btn" type="submit" name="remove" value="<?php echo $product['product']['id'];?>">x</button></td>
+       <!-- </div> -->
 
      </div>
      <div class="striped__line--cart"></div>
@@ -44,9 +44,10 @@
    <article class="cart__total" >
    <h3 class="hidden">Totaal</h3>
      <ul class="cart__total--items">
-       <li class="cart__total--item bold">Totaal: <span class="total__item--price">&euro;<?php echo money_format("%i", $total - 2);?></span></li>
-       <li class="cart__total--item bold">Verzendkosten: <span class="total__item--price">&euro;2.99</span></li>
-       <li class="cart__total--item bold">Korting: <span class="total__item--price">&euro;4.99</span></li>
+     <p><button type="submit" id="update-cart" class="btn" name="action" value="update">Update Cart</button></p>
+       <li class="cart__total--item bold">Totaal: <span class="total__item--price">&euro;<?php echo money_format("%i", $total - 2.99);?></span></li>
+       <li class="cart__total--item bold">Verzendkosten: <span class="total__item--price">+ &euro;2.99</span></li>
+       <li class="cart__total--item bold">Korting: <span class="total__item--price">- &euro;4.99</span></li>
      </ul>
      <div class="striped__line--detail"></div>
      <p class="cart__total--items cart__total--item bold">Totaal: <span class="total__item--price">&euro;<?php echo money_format("%i", $total);?></span></p>
