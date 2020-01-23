@@ -1,5 +1,5 @@
 <main class="main__detail">
-
+<form action="index.php?page=cart" method="post" id="">
  <a class="back" href="index.php">&#60; terug</a>
  <section class="cart">
    <h2 class="hidden">Cart</h2>
@@ -56,4 +56,5 @@
     </article>
     </form>
  </section>
+ </form>
 </main>
