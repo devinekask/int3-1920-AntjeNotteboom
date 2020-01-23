@@ -50,5 +50,25 @@
       </div>
     </article>
 
+    <article class="article__more">
+      <img class="article__more--image" src="./assets/longread/longread_boek_wool.jpg" alt="cover boek wool" width="250">
+      <div class="article__more--wrapper">
+      <h3 class="article__more--title">Lees verder</h3>
+       <p class="article__more--text">
+         Deze week is de highlight het boek wool van Hugh Howey.
+         Het boek past perfect in het thema sci-fi. Ook al speelt het zich af in de toekomst, toch haalt het problemen aan die in onze hedendaagse maatschappij van toepassing zijn.
+         Het boek neemt je volledig mee in het verhaal en doordat het telkens maar delen van het de mysteries laat zien wil je alleen maar verder lezen om het volledige mysterie te achterhalen.
+         De schrijfwijze is heel ontspannend en leest vlot, je hebt het boek in een mum van tijd uit.
+         Wij raden het alleszins aan! Met Humo willen we nu via deze longread een stukje focussen op het boek, dan vooral op het eerste hoofdstuk met Holston.
+       </p>
+       <div class="buttons__wrapper">
+        <a class="button__one" href="index.php?page=detail&id=2">Koop het boek</a>
+        <a class="button__two" href="index.php">Ga naar de shop</a>
+       </div>
+      </div>
+
+
+    </article>
+
   </section>
 </main>

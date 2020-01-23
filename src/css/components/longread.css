@@ -7,7 +7,6 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-
 }
 
 .home__longread--article {
@@ -79,6 +78,15 @@
   margin: 1rem;
   width: 8rem;
   border: none;
+
+  @media (--only-ipad-screen) {
+    font-size: 2rem;
+    padding: .7rem 1.5rem;
+  }
+
+  @media (--only-mobile2-screen) {
+    font-size: 2rem;
+  }
 }
 
 .longread__book {
@@ -146,9 +154,7 @@
   grid-gap: .5rem; */
 }
 
-/* .longread__background {
-
-} */
+/* .longread__background {} */
 
 .longread__section {
   background-color: var(--darkgrey);
@@ -382,4 +388,74 @@ calculateRem(20px) calculateRem(50px) */
   font-size: 5rem;
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-weight: 100;
+}
+
+/* KOOP HET BOEK*/
+
+.article__more {
+  background-image: url(../../assets/longread/background_read_more.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+
+.article__more--image {
+  margin-left: 25%;
+}
+
+.article__more--title {
+  font-size: 3rem;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  margin-bottom: 2rem;
+}
+
+.article__more--wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+
+}
+
+.article__more--text {
+  width: 60%;
+  font-size: 1.2rem;
+  margin: 1rem 0rem;
+}
+
+.buttons__wrapper {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.button__one {
+  width: 12rem;
+  padding: 1rem;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem 0rem;
+  font-size: 1rem;
+  background-color: var(--red);
+  border: .1rem solid var(--red);
+  border-radius: 1rem;
+}
+
+.button__two {
+  width: 12.5rem;
+  padding: 1rem;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem 0rem 1rem 1rem;
+  font-size: 1rem;
+  border: .1rem solid var(--red);
+  border-radius: 1rem;
+
 }
