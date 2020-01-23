@@ -38,8 +38,12 @@
                             E-book &euro;1.99</label>
                         </legend>
                     </fieldset>
-                    <a class="cart__button cart__button--product" href="index.php?page=cart"> + In mijn winkelwagen <img
-                            src="assets/icons/cart_icon.svg" alt="voeg to in winkelmandje"></a>
+
+                     <form class="cart__button--wrapper" method="post" action="index.php?page=cart">
+                      <input type="hidden" name="product_id" value="<?php echo $product['id'];?>" />
+                      <button class="cart__button cart__button--product btn" type="submit" name="action" value="add">+ In mijn winkelwagen <img
+                            src="assets/icons/cart_icon.svg" alt="voeg to in winkelmandje"></button>
+                     </form>
 
                     <ul class="list__icons">
                         <li class="list__icon"> <img class="list__icon--image" src="assets/icons/cart_icon.svg" alt="winkelkarretje"> Eenvoudig bestellen</li>
