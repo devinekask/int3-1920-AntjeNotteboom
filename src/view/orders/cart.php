@@ -3,6 +3,7 @@
  <a class="back" href="index.php">&#60; terug</a>
  <section class="cart">
    <h2 class="hidden">Cart</h2>
+   <form action="index.php?page=cart" method="post" id="">
 
    <?php
     $total = 0;
@@ -22,7 +23,7 @@
        </div>
 
        <!-- <div class="cart__item--delete link__black"> -->
-       <td class='remove-item'><button class="cart__item--delete link__black remove-from-cart btn" type="submit" name="remove" value="<?php echo $product['product']['id'];?>">x</button></td>
+       <td class='remove-item'><button class="cart__item--delete link__black " type="submit" name="remove" value="<?php echo $product['product']['id'];?>">x</button></td>
        <!-- </div> -->
 
      </div>
@@ -31,7 +32,7 @@
    <?php
     }
    ?>
-
+   <p><button type="submit" id="update-cart" class="cart__discount--button cart__total--button link__white" name="action" value="update">Update Cart</button></p>
    <article class="cart__discount">
      <h3 class="cart__discount--title">Gebruik de kortingscode</h3>
        <div class="cart__discount--add">
@@ -44,15 +45,15 @@
    <article class="cart__total" >
    <h3 class="hidden">Totaal</h3>
      <ul class="cart__total--items">
-     <p><button type="submit" id="update-cart" class="btn" name="action" value="update">Update Cart</button></p>
-       <li class="cart__total--item bold">Totaal: <span class="total__item--price">&euro;<?php echo money_format("%i", $total - 2.99);?></span></li>
+       <li class="cart__total--item bold">Totaal: <span class="total__item--price">&euro;<?php echo money_format("%i", $total);?></span></li>
        <li class="cart__total--item bold">Verzendkosten: <span class="total__item--price">+ &euro;2.99</span></li>
        <li class="cart__total--item bold">Korting: <span class="total__item--price">- &euro;4.99</span></li>
      </ul>
      <div class="striped__line--detail"></div>
-     <p class="cart__total--items cart__total--item bold">Totaal: <span class="total__item--price">&euro;<?php echo money_format("%i", $total);?></span></p>
+     <p class="cart__total--items cart__total--item bold">Totaal: <span class="total__item--price">&euro;<?php echo money_format("%i", $total + 2.99);?></span></p>
 
     <a class="cart__discount--button cart__total--button link__white" href="index.php?page=checkout">Verder naar betalen ></a>
     </article>
+    </form>
  </section>
 </main>
