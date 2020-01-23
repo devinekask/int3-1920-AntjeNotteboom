@@ -12,7 +12,7 @@
          <fieldset class="checkout__form">
            <legend class="payment__form--legend bold">Kies je betaling</legend>
            <label class="payment__label" for="bancontact">
-             <input class="payment__input" type="radio" name="payment" id="bancontact"> <span>Bancontact</span> </label>
+             <input required class="payment__input" type="radio" name="payment" id="bancontact"> <span>Bancontact</span> </label>
             <label class="payment__label" for="creditcard">
               <input class="payment__input" type="radio" name="payment" id="creditcard"> <span>Creditcard</span> </label>
               <label class="payment__label" for="paypal">
@@ -20,6 +20,7 @@
             <label class="payment__label" for="achteraf">
               <input class="payment__input" type="radio" name="payment" id="achteraf"> <span>Achteraf Betalen</span> </label>
 
+              <input type="submit" value="verder naar betalen" class="cart__discount--button cart__total--button link__white">
             </legend>
          </fieldset>
    </article>

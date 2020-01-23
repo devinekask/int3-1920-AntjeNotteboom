@@ -6,6 +6,7 @@
    <li class="checkout__nav--item">3. Bevestiging</li>
  </ul>
  <section class="checkout">
+ <form action="index.php?page=cart" method="post" id="">
    <h2 class="hidden">checkout</h2>
    <article class="checkout__article">
          <h3 class="hidden">Contact gegevens</h3>
@@ -57,24 +58,24 @@
       $total += $productTotal;
    ?>
      <div class="overview__item">
-     <p><?php echo $product['quantity'];?></p>
+     <p><?php echo $product['quantity'];?>x</p>
      <p class="bold"><?php echo $product['product']['title'];?></p>
      <p>&euro;<?php echo $product['product']['price'];?></p>
-     <button class="link__black btn" type="submit" name="remove" value="<?php echo $product['product']['id'];?>">x</button>
+     <!-- <button class="link__black btn" type="submit" name="remove" value="<?php echo $product['product']['id'];?>">x</button> -->
      </div>
      <?php } ?>
      <div class="striped__line--detail"></div>
      <ul class="cart__total--items">
-       <li class="cart__total--item bold">Totaal: <span class="total__item--price">&euro;<?php echo money_format("%i", $total -2.99);?></span></li>
-       <li class="cart__total--item bold">Verzendkosten: <span class="total__item--price">- &euro;2.99</span></li>
+       <li class="cart__total--item bold">Totaal: <span class="total__item--price">&euro;<?php echo money_format("%i", $total);?></span></li>
+       <li class="cart__total--item bold">Verzendkosten: <span class="total__item--price">+ &euro;2.99</span></li>
        <li class="cart__total--item bold">Korting: <span class="total__item--price">- &euro;4.99</span></li>
      </ul>
      <div class="striped__line--detail"></div>
-     <p class="cart__total--items cart__total--item bold">Totaal: <span class="total__item--price">&euro;<?php echo money_format("%i", $total);?></span></p>
+     <p class="cart__total--items cart__total--item bold">Totaal: <span class="total__item--price">&euro;<?php echo money_format("%i", $total +2.99);?></span></p>
 
    </article>
 
-
+    </form>
  </section>
  <article class="cart__total" >
    <h3 class="hidden">Totaal</h3>
