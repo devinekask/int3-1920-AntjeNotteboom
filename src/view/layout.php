@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Book-it</title>
-    <!-- <?php echo $css;?> -->
+     <?php echo $css;?>
      <!-- <link rel="stylesheet" href="style.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Courier+Prime:400,700|Oswald|Love+Ya+Like+A+Sister|Playfair+Display|Poppins:400,700|Raleway:400&display=swap" rel="stylesheet">
   </head>
