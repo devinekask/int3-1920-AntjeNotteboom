@@ -13,7 +13,6 @@
   --reminderSize: 1.6rem;
   --subtitleSize: 1.4rem;
   --textSize: 1.2rem;
-
 }
 
 @custom-media --only-mobile-screen (width <= 320px);

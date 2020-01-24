@@ -6,7 +6,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-
 }
 
 .winkel__title {
@@ -154,6 +153,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   @media (--only-mobile2-screen) {
     display: flex;
     flex-direction: column;
@@ -291,7 +291,6 @@
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-
 }
 
 .abonnement__price {
