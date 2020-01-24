@@ -15,20 +15,20 @@
         <p class="holston__text holston__pt1--text-1">Holston wist dat als hij naar de schermen, die de buitenwereld projecteren, zou kijken, voorbij de wazigheid van de vuile camera’s, dicht bij de top van de heuvel, hij haar vorm kon zien. Daar op die heuvel, kon hij zijn vrouw zien liggen. Ze lag daar als een slapende steen, rondom haar de giftige lucht die haar wegdroeg. </p>
 
         <picture class="misschien">
-            <source media="(max-width: 320px)" srcset="./assets/longread/phone/misschien_phone.png"/>
+            <source media="(max-width: 525px)" srcset="./assets/longread/phone/misschien_phone.png"/>
             <img  src="./assets/longread/misschien.png" alt="misschien" >
          </picture>
 
          <picture class="holston_frame">
+           <source media="(max-width: 525px)" srcset="./assets/longread/phone/glitch_frame_phone.png"/>
            <source media="(max-width: 750px)" srcset="./assets/longread/ipad/glitch_frame_ipad.png"/>
-           <source media="(max-width: 320px)" srcset="./assets/longread/ipad/glitch_frame_phone.png"/>
            <img  src="./assets/longread/glitch_frame.png" alt="glitch frame" >
          </picture>
 
         <p class="holston__text holston__pt1--text-2">Het was moeilijk te zien en niet duidelijk te onderscheiden. Daarnaast was er natuurlijk ook weinig vertrouwen in dit zicht. Er was eigenlijk veel twijfel over wat echt en niet echt was. Dus Holston besloot gewoon niet te kijken.</p>
 
         <picture class="buiten">
-           <source media="(max-width: 320px)" srcset="./assets/longread/phone/buiten_phone.png"/>
+           <source media="(max-width: 525px)" srcset="./assets/longread/phone/buiten_phone.png"/>
            <source media="(max-width: 750px)" srcset="./assets/longread/ipad/buiten_ipad.png"/>
            <img  src="./assets/longread/ik wil naar buiten.png" alt="ik wil naar buiten" >
         </picture>
@@ -50,20 +50,20 @@
         <p class="old_documents">‘Ik ben verschillende oude documenten aan het samenleggen. Als daaruit blijkt dat het effectief waar is, dan betekent het dat er wel vaker opstanden optreden. Misschien zelf 1 keer per generatie.’ zei Allison.</p>
 
         <picture class="glitch__documents">
-           <source media="(max-width: 320px)" srcset="./assets/longread/phone/glitch_documents_phone.png"/>
+           <source media="(max-width: 525px)" srcset="./assets/longread/phone/glitch_documents_phone.png"/>
            <img  src="./assets/longread/glitch_documents.png" alt="documents glitch" >
         </picture>
 
       <p class="maybe">‘Misschien hadden ze vroeger gewoon nog geen systeem om de sensoren en camera’s te kuisen.</p>
       <p class="crazy">Het zicht zal vroeger alleen maar <span class="text__waziger big__text">waziger</span> geworden zijn tot dat mensen <span class="text__krankzinnig big__text">KarknzininG</span>  werden. </p>
-      <p class="cleaning">Waardoor ze tenslotte een paar mensen hebben laten kuisen om dingen terug recht te zetten. Of misschien was het gewoon natuurlijke populatiecontrole?.’</p>
+      <p class="cleaning">Waardoor ze tenslotte een paar mensen hebben laten kuisen om dingen terug recht te zetten. Of misschien was het gewoon natuurlijke populatiecontrole?.’ Zei Holston.</p>
       <picture class="glitch__camera">
-           <source media="(max-width: 320px)" srcset="./assets/longread/phone/glitch_camera_phone.png"/>
+           <!-- <source media="(max-width: 320px)" srcset="./assets/longread/phone/glitch_camera_phone.png"/> -->
            <source media="(max-width: 750px)" srcset="./assets/longread/ipad/glitch_camera_ipad.png"/>
-           <img  src="./assets/longread/glitch_camera.png" alt="glitch camera" >
+           <img  src="./assets/longread/ipad/glitch_camera_ipad.png" alt="glitch camera" >
       </picture>
       <picture class="glitch__head">
-           <source media="(max-width: 320px)" srcset="./assets/longread/phone/glitch_hoofd_phone.png"/>
+           <source media="(max-width: 525px)" srcset="./assets/longread/phone/glitch_hoofd_phone.png"/>
            <source media="(max-width: 750px)" srcset="./assets/longread/ipad/glitch_hoofd_ipad.png"/>
            <img  src="./assets/longread/glitch_hoofd.png" alt="glitch hoofd schudden" >
       </picture>
@@ -75,7 +75,7 @@
       </div>
 
       <p class="rebels">‘Ik denk het niet. Ik denk niet dat de rebbelen de harde schijven hebben gewist tijden de opstand. Niet zoals ons altijd verteld is alleszins. </p>
-      <p class="hard_drive">Ik denk dat WIJ de harde schijven hebben gewist. Onze voorvaderen bedoel ik, niet de rebellen.’</p>
+      <p class="hard_drive">Ik denk dat WIJ de harde schijven hebben gewist. Onze voorvaderen bedoel ik, niet de rebellen.’ <br> Zei Allison.</p>
       <p class="why_the_good">‘Waarom zouden wij, de goede mensen, de harde schijven wissen?’ Antwoord Holston.</p>
       <div class="holston__pt2--background-bottom">
         <p class="the_good">Wie zegt dat wij de goede zijn?</p>
