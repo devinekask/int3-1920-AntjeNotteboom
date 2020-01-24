@@ -26,9 +26,7 @@
 
 }
 
-.home__longread--image {
-
-}
+/* .home__longread--image {} */
 
 .longread__text--title {
   font-size: 7.5rem;
@@ -96,8 +94,7 @@
 
 /* ERROR */
 
-.longread__error {
-}
+/* .longread__error {} */
 
 .error__longread--section {
   background-image: url(../../assets/longread/min/background_error-min.jpg);
@@ -278,7 +275,7 @@
 }
 
 .text__krankzinnig {
-  font-family: "Love Ya Like A Sister", fantasy;
+  font-family: 'Love Ya Like A Sister', fantasy;
 }
 
 /* HOLSToN PT1 */
@@ -588,7 +585,7 @@
 
 .the_good {
   font-size: 5rem;
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-weight: 100;
   text-align: center;
 
@@ -631,7 +628,7 @@
 
 .article__more--title {
   font-size: 3rem;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   margin-bottom: 2rem;
 }
 
