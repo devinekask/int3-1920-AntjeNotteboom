@@ -82,7 +82,7 @@
       </div>
     </article>
 
-    <!-- <article class="article__more">
+    <article class="article__more">
       <img class="article__more--image" src="./assets/longread/longread_boek_wool.jpg" alt="cover boek wool" width="250" height="401">
       <div class="article__more--wrapper">
       <h3 class="article__more--title">Lees verder</h3>
@@ -98,7 +98,7 @@
         <a class="button__two" href="index.php">Ga naar de shop</a>
        </div>
       </div>
-    </article> -->
+    </article>
 
   </section>
 </main>
